@@ -1,0 +1,3 @@
+Replace cover.svg with cover.webp (1600px+, 16:9). Update data/projects.ts.
+Add hero.mp4 (1920x1080 H.264, 16:9), cover.mp4 (muted loop), frame-01.webp, frame-02.webp.
+Video paths are intentionally unset until files exist.
