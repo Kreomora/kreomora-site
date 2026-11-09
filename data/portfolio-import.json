@@ -1,0 +1,326 @@
+[
+  {
+    "section": "studio",
+    "originalFilename": "студио_пати_посты.mp4",
+    "slug": "noir-void",
+    "title": "NOIR//VOID — Nightlife Campaign",
+    "category": "Motion / Social",
+    "size": 28628934,
+    "duration": 20.09,
+    "resolution": "1080x1080",
+    "video": "/portfolio/studio/noir-void.mp4",
+    "poster": "/portfolio/posters/noir-void.jpg",
+    "preview": "/portfolio/previews/noir-void.mp4",
+    "gallery": [
+      "/portfolio/posters/noir-void-1.jpg",
+      "/portfolio/posters/noir-void-2.jpg",
+      "/portfolio/posters/noir-void-3.jpg"
+    ]
+  },
+  {
+    "section": "studio",
+    "originalFilename": "студио_посты_смачно.mp4",
+    "slug": "smachno-social",
+    "title": "СМАЧНО! — Social Campaign",
+    "category": "Social Campaign",
+    "size": 29554683,
+    "duration": 20.09,
+    "resolution": "1080x1080",
+    "video": "/portfolio/studio/smachno-social.mp4",
+    "poster": "/portfolio/posters/smachno-social.jpg",
+    "preview": "/portfolio/previews/smachno-social.mp4",
+    "gallery": [
+      "/portfolio/posters/smachno-social-1.jpg",
+      "/portfolio/posters/smachno-social-2.jpg",
+      "/portfolio/posters/smachno-social-3.jpg"
+    ]
+  },
+  {
+    "section": "studio",
+    "originalFilename": "студио_рекламный_смачно.mp4",
+    "slug": "smachno-food",
+    "title": "СМАЧНО! — Food Commercial",
+    "category": "Food Commercial",
+    "size": 21841270,
+    "duration": 15.07,
+    "resolution": "1080x1920",
+    "video": "/portfolio/studio/smachno-food.mp4",
+    "poster": "/portfolio/posters/smachno-food.jpg",
+    "preview": "/portfolio/previews/smachno-food.mp4",
+    "gallery": [
+      "/portfolio/posters/smachno-food-1.jpg",
+      "/portfolio/posters/smachno-food-2.jpg",
+      "/portfolio/posters/smachno-food-3.jpg"
+    ]
+  },
+  {
+    "section": "studio",
+    "originalFilename": "студио_смачно_рекламный.mp4",
+    "slug": "smachno-delivery",
+    "title": "СМАЧНО! — Delivery Campaign",
+    "category": "Commercial",
+    "size": 25489301,
+    "duration": 17.86,
+    "resolution": "1080x1450",
+    "video": "/portfolio/studio/smachno-delivery.mp4",
+    "poster": "/portfolio/posters/smachno-delivery.jpg",
+    "preview": "/portfolio/previews/smachno-delivery.mp4",
+    "gallery": [
+      "/portfolio/posters/smachno-delivery-1.jpg",
+      "/portfolio/posters/smachno-delivery-2.jpg",
+      "/portfolio/posters/smachno-delivery-3.jpg"
+    ]
+  },
+  {
+    "section": "studio",
+    "originalFilename": "студио_пост_1.mp4",
+    "slug": "studio-experiment-01",
+    "title": "STUDIO EXPERIMENT 01",
+    "category": "Visual Experiment",
+    "size": 12725480,
+    "duration": 9.92,
+    "resolution": "1080x1450",
+    "video": "/portfolio/studio/studio-experiment-01.mp4",
+    "poster": "/portfolio/posters/studio-experiment-01.jpg",
+    "preview": "/portfolio/previews/studio-experiment-01.mp4",
+    "gallery": [
+      "/portfolio/posters/studio-experiment-01-1.jpg",
+      "/portfolio/posters/studio-experiment-01-2.jpg",
+      "/portfolio/posters/studio-experiment-01-3.jpg"
+    ]
+  },
+  {
+    "section": "studio",
+    "originalFilename": "студио_пост_2.mp4",
+    "slug": "studio-experiment-02",
+    "title": "STUDIO EXPERIMENT 02",
+    "category": "Visual Experiment",
+    "size": 14043237,
+    "duration": 11.08,
+    "resolution": "1080x1450",
+    "video": "/portfolio/studio/studio-experiment-02.mp4",
+    "poster": "/portfolio/posters/studio-experiment-02.jpg",
+    "preview": "/portfolio/previews/studio-experiment-02.mp4",
+    "gallery": [
+      "/portfolio/posters/studio-experiment-02-1.jpg",
+      "/portfolio/posters/studio-experiment-02-2.jpg",
+      "/portfolio/posters/studio-experiment-02-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_3д.mp4",
+    "slug": "3d-story",
+    "title": "3D Story",
+    "category": "3D Animation",
+    "size": 55929986,
+    "duration": 35.97,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/3d-story.mp4",
+    "poster": "/portfolio/posters/3d-story.jpg",
+    "preview": "/portfolio/previews/3d-story.mp4",
+    "gallery": [
+      "/portfolio/posters/3d-story-1.jpg",
+      "/portfolio/posters/3d-story-2.jpg",
+      "/portfolio/posters/3d-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_реализм.mp4",
+    "slug": "cinematic-realism",
+    "title": "Cinematic Realism",
+    "category": "Cinematic",
+    "size": 47906159,
+    "duration": 30.07,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/cinematic-realism.mp4",
+    "poster": "/portfolio/posters/cinematic-realism.jpg",
+    "preview": "/portfolio/previews/cinematic-realism.mp4",
+    "gallery": [
+      "/portfolio/posters/cinematic-realism-1.jpg",
+      "/portfolio/posters/cinematic-realism-2.jpg",
+      "/portfolio/posters/cinematic-realism-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_вязанныйэ.mp4",
+    "slug": "knitted-story",
+    "title": "Knitted Story",
+    "category": "Knitted Animation",
+    "size": 44225097,
+    "duration": 27.89,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/knitted-story.mp4",
+    "poster": "/portfolio/posters/knitted-story.jpg",
+    "preview": "/portfolio/previews/knitted-story.mp4",
+    "gallery": [
+      "/portfolio/posters/knitted-story-1.jpg",
+      "/portfolio/posters/knitted-story-2.jpg",
+      "/portfolio/posters/knitted-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_пластилин.mp4",
+    "slug": "clay-story",
+    "title": "Clay Story",
+    "category": "Clay Animation",
+    "size": 45375663,
+    "duration": 30.07,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/clay-story.mp4",
+    "poster": "/portfolio/posters/clay-story.jpg",
+    "preview": "/portfolio/previews/clay-story.mp4",
+    "gallery": [
+      "/portfolio/posters/clay-story-1.jpg",
+      "/portfolio/posters/clay-story-2.jpg",
+      "/portfolio/posters/clay-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_2д.mp4",
+    "slug": "2d-animation",
+    "title": "2D Animation",
+    "category": "2D Animation",
+    "size": 55069701,
+    "duration": 35.48,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/2d-animation.mp4",
+    "poster": "/portfolio/posters/2d-animation.jpg",
+    "preview": "/portfolio/previews/2d-animation.mp4",
+    "gallery": [
+      "/portfolio/posters/2d-animation-1.jpg",
+      "/portfolio/posters/2d-animation-2.jpg",
+      "/portfolio/posters/2d-animation-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_анимэ.mp4",
+    "slug": "anime-story",
+    "title": "Anime Story",
+    "category": "Anime",
+    "size": 47666319,
+    "duration": 30.07,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/anime-story.mp4",
+    "poster": "/portfolio/posters/anime-story.jpg",
+    "preview": "/portfolio/previews/anime-story.mp4",
+    "gallery": [
+      "/portfolio/posters/anime-story-1.jpg",
+      "/portfolio/posters/anime-story-2.jpg",
+      "/portfolio/posters/anime-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_лего.mp4",
+    "slug": "brick-world",
+    "title": "Brick World",
+    "category": "Brick Animation",
+    "size": 44002645,
+    "duration": 29.28,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/brick-world.mp4",
+    "poster": "/portfolio/posters/brick-world.jpg",
+    "preview": "/portfolio/previews/brick-world.mp4",
+    "gallery": [
+      "/portfolio/posters/brick-world-1.jpg",
+      "/portfolio/posters/brick-world-2.jpg",
+      "/portfolio/posters/brick-world-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_гендер_пати.mp4",
+    "slug": "gender-reveal",
+    "title": "Gender Reveal Story",
+    "category": "Personal Film",
+    "size": 51408907,
+    "duration": 31.97,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/gender-reveal.mp4",
+    "poster": "/portfolio/posters/gender-reveal.jpg",
+    "preview": "/portfolio/previews/gender-reveal.mp4",
+    "gallery": [
+      "/portfolio/posters/gender-reveal-1.jpg",
+      "/portfolio/posters/gender-reveal-2.jpg",
+      "/portfolio/posters/gender-reveal-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_для_ребёнка.mp4",
+    "slug": "child-story",
+    "title": "A Story for a Child",
+    "category": "Personal Film",
+    "size": 46628359,
+    "duration": 30.72,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/child-story.mp4",
+    "poster": "/portfolio/posters/child-story.jpg",
+    "preview": "/portfolio/previews/child-story.mp4",
+    "gallery": [
+      "/portfolio/posters/child-story-1.jpg",
+      "/portfolio/posters/child-story-2.jpg",
+      "/portfolio/posters/child-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_про_семью.mp4",
+    "slug": "family-story",
+    "title": "Family Story",
+    "category": "Personal Film",
+    "size": 51978332,
+    "duration": 35.71,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/family-story.mp4",
+    "poster": "/portfolio/posters/family-story.jpg",
+    "preview": "/portfolio/previews/family-story.mp4",
+    "gallery": [
+      "/portfolio/posters/family-story-1.jpg",
+      "/portfolio/posters/family-story-2.jpg",
+      "/portfolio/posters/family-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_про_отношения.mp4",
+    "slug": "love-story",
+    "title": "Love Story",
+    "category": "Personal Film",
+    "size": 52972937,
+    "duration": 35.02,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/love-story.mp4",
+    "poster": "/portfolio/posters/love-story.jpg",
+    "preview": "/portfolio/previews/love-story.mp4",
+    "gallery": [
+      "/portfolio/posters/love-story-1.jpg",
+      "/portfolio/posters/love-story-2.jpg",
+      "/portfolio/posters/love-story-3.jpg"
+    ]
+  },
+  {
+    "section": "multstory",
+    "originalFilename": "мульт_предложение.mp4",
+    "slug": "the-proposal",
+    "title": "The Proposal",
+    "category": "Personal Film",
+    "size": 47723858,
+    "duration": 30.07,
+    "resolution": "1920x1080",
+    "video": "/portfolio/multstory/the-proposal.mp4",
+    "poster": "/portfolio/posters/the-proposal.jpg",
+    "preview": "/portfolio/previews/the-proposal.mp4",
+    "gallery": [
+      "/portfolio/posters/the-proposal-1.jpg",
+      "/portfolio/posters/the-proposal-2.jpg",
+      "/portfolio/posters/the-proposal-3.jpg"
+    ]
+  }
+]

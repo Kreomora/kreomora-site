@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {randomBytes} from 'node:crypto';
+import {getPayload} from 'payload';
+import config from '../payload.config';
+const payload=await getPayload({config});
+const suffix=randomBytes(5).toString('hex');
+let projectID:number|undefined;let mediaID:number|undefined;
+try{
+ const users=await payload.find({collection:'users',limit:1});assert(users.docs[0]);const user={...users.docs[0],collection:'users' as const};
+ await assert.rejects(()=>payload.create({collection:'projects',overrideAccess:false,draft:true,data:{title:'Denied'}}));
+ await assert.rejects(()=>payload.find({collection:'users',overrideAccess:false}));
+ const asset=await payload.find({collection:'media',limit:1,where:{visibility:{equals:'public'}}});assert(asset.docs[0]);
+ const draft=await payload.create({collection:'projects',overrideAccess:false,user,draft:true,data:{title:`CMS test ${suffix}`,slug:`cms-test-${suffix}`,section:'studio',year:2026,description:'Draft isolation integration test.',theme:'dark',cover:asset.docs[0].id,displayOrder:-100,featured:true}});projectID=draft.id;
+ const anonymous=()=>payload.find({collection:'projects',overrideAccess:false,where:{id:{equals:projectID}}});
+ assert.equal((await anonymous()).totalDocs,0,'Draft leaked');
+ assert.equal((await payload.find({collection:'projects',overrideAccess:false,draft:true,where:{id:{equals:projectID}}})).totalDocs,0,'Draft query leaked');
+ await payload.update({collection:'projects',id:projectID!,user,overrideAccess:false,data:{_status:'published'}});assert.equal((await anonymous()).docs[0].title,draft.title);
+ await payload.update({collection:'projects',id:projectID!,user,overrideAccess:false,draft:true,data:{title:'PRIVATE REVISION'}});
+ assert.equal((await anonymous()).docs[0].title,draft.title,'Unpublished revision leaked');
+ await payload.update({collection:'projects',id:projectID!,user,overrideAccess:false,data:{title:'Published revision',displayOrder:99,_status:'published'}});
+ assert.equal((await anonymous()).docs[0].displayOrder,99);
+ await assert.rejects(()=>payload.update({collection:'projects',id:projectID!,overrideAccess:false,data:{title:'Denied'}}));
+ await assert.rejects(()=>payload.delete({collection:'projects',id:projectID!,overrideAccess:false}));
+ await assert.rejects(()=>payload.create({collection:'projects',data:{title:'Bad slug',slug:'work',section:'studio',year:2026,description:'invalid',theme:'dark',cover:asset.docs[0].id,displayOrder:0,_status:'published'}}));
+ await payload.update({collection:'projects',id:projectID!,user,overrideAccess:false,data:{_status:'draft'}});assert.equal((await anonymous()).totalDocs,0,'Unpublish failed');
+ const buffer=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=','base64');
+ const upload=await payload.create({collection:'media',user,overrideAccess:false,data:{alt:'Private test upload',visibility:'private'},file:{name:`test-${suffix}.png`,data:buffer,mimetype:'image/png',size:buffer.length}});mediaID=upload.id;
+ assert.equal((await payload.find({collection:'media',overrideAccess:false,where:{id:{equals:mediaID}}})).totalDocs,0,'Private media leaked');
+ await assert.rejects(()=>payload.update({collection:'projects',id:projectID!,user,overrideAccess:false,data:{cover:mediaID,_status:'published'}}));
+ await payload.delete({collection:'projects',id:projectID!,user,overrideAccess:false});projectID=undefined;
+ console.log('PASS: authentication, CRUD, draft isolation, draft revision, publishing, unpublishing, ordering, reserved slugs, private uploads and publish validation.');
+}finally{if(projectID)await payload.delete({collection:'projects',id:projectID});if(mediaID)await payload.delete({collection:'media',id:mediaID});await payload.destroy();}

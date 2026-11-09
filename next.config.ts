@@ -1,3 +1,4 @@
 import type { NextConfig } from 'next';
-const config: NextConfig = { output: 'export', trailingSlash: true, images: { unoptimized: true } };
-export default config;
+import {withPayload} from '@payloadcms/next/withPayload';
+const config: NextConfig = { trailingSlash: true, images: { unoptimized: true } };
+export default withPayload(config);

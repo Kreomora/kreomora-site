@@ -1,0 +1,10 @@
+import path from 'node:path';
+import {buildConfig} from 'payload';
+import {sqliteAdapter} from '@payloadcms/db-sqlite';
+import sharp from 'sharp';
+import {Users} from './cms/collections/Users';
+import {Media} from './cms/collections/Media';
+import {Projects} from './cms/collections/Projects';
+const secret=process.env.PAYLOAD_SECRET;
+if(!secret||secret.length<32)throw new Error('Set PAYLOAD_SECRET to at least 32 random characters. Run npm run cms:setup.');
+export default buildConfig({secret,sharp,localization:{locales:[{label:"Русский",code:"ru"},{label:"English",code:"en"}],defaultLocale:"ru",fallback:true},serverURL:process.env.NEXT_PUBLIC_SITE_URL||'http://localhost:3000',admin:{user:'users',importMap:{baseDir:path.resolve(/*turbopackIgnore: true*/ '.')},meta:{titleSuffix:'— KREOMORA CMS'}},collections:[Users,Media,Projects],db:sqliteAdapter({client:{url:process.env.DATABASE_URL||'file:./storage/kreomora.db'},migrationDir:path.resolve('cms/migrations'),push:process.env.NODE_ENV!=='production'}),typescript:{outputFile:path.resolve('payload-types.ts')},upload:{limits:{fileSize:100*1024*1024}},csrf:[process.env.NEXT_PUBLIC_SITE_URL||'http://localhost:3000']});

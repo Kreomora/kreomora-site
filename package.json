@@ -9,15 +9,29 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "cms:setup": "node scripts/setup-cms.mjs",
+    "cms:admin": "node --env-file=.env --import tsx scripts/create-admin.ts",
+    "cms:seed": "node --env-file=.env --import tsx scripts/seed-cms.ts",
+    "cms:types": "payload generate:types",
+    "cms:importmap": "payload generate:importmap",
+    "cms:migrate": "payload migrate",
+    "cms:migrate:create": "payload migrate:create",
+    "cms:localize": "node --env-file=.env --import tsx scripts/localize-portfolio.ts",
+    "test:i18n": "node scripts/test-localization.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@payloadcms/db-sqlite": "3.93.0",
+    "@payloadcms/next": "3.93.0",
+    "graphql": "16.15.0",
     "next": "^16.4.5",
+    "payload": "3.93.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "sharp": "0.35.5"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
@@ -25,6 +39,14 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.5",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3"
+  },
+  "type": "module",
+  "engines": {
+    "node": "^22.23.4 || >=24.22.1"
+  },
+  "overrides": {
+    "dompurify": "3.4.17"
   }
 }

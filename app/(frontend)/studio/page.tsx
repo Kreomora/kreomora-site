@@ -1,0 +1,10 @@
+import {MediaVideo} from '@/components/media';
+import {Reel} from '@/components/interactive';
+import {CTA,Projects,SectionTitle} from '@/components/sections';
+import {Mascot} from '@/components/mascot';
+import {ContactLink} from '@/components/contact-link';
+import {getProjects} from '@/lib/projects';
+import {getLocale,localizedMetadata} from '@/lib/i18n';
+import {dictionaries} from '@/data/translations';
+export async function generateMetadata(){const d=dictionaries[await getLocale()];return localizedMetadata(`KREOMORA STUDIO — ${d.studioCopy}`);}
+export default async function Studio(){const locale=await getLocale(),d=dictionaries[locale],projects=await getProjects('studio');return <div className="dark"><section className="division-hero studio-hero"><MediaVideo poster={projects[0]?.cover||'/brand/kreomora-logo-light.png'} src={projects[0]?.heroVideo} priority/><div className="division-title wrap"><span className="eyebrow">KREOMORA / {d.studioLabel}</span><h1>STUDIO</h1><div className="division-bottom"><h2 className="lines">{d.studioHero}</h2><div className="division-actions"><Reel poster={projects[0]?.cover} src={projects[0]?.heroVideo}/><ContactLink type="studio" locale={locale}/></div></div></div><span className="hero-scroll">{d.studioSecondary}<a href="#studio-work">{d.explore} ↓</a></span></section><section id="studio-work" className="wrap selected"><SectionTitle label={d.studioLabel} title={d.studioWork} href={`/${locale}/studio/work`} link={d.index}/><Projects projects={projects}/></section><section className="brand-teaser wrap studio-capabilities-intro"><div><span className="eyebrow">KREOMORA STUDIO</span><h2>{d.capabilities}</h2><p>{d.studioCopy}</p></div><Mascot kind="studio" locale={locale}/></section><section className="wrap capabilities">{d.services.map(([title,description],i)=><div className="capability reveal" key={title}><small>{String(i+1).padStart(2,'0')}</small><h3>{title}</h3><p>{description}</p><span>↗</span></div>)}</section><CTA type="studio"/></div>;}

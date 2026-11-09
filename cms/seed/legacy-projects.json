@@ -1,0 +1,310 @@
+[
+  {
+    "title": "KLYRO ONE",
+    "slug": "klyro-one",
+    "section": "studio",
+    "subtitle": "Product Film",
+    "category": [
+      {
+        "value": "Commercial"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "year": 2026,
+    "description": "A premium wireless audio campaign built around focus, movement and everyday immersion.",
+    "services": [
+      {
+        "value": "Creative Direction"
+      },
+      {
+        "value": "Visual Development"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "theme": "dark",
+    "featured": true,
+    "displayOrder": 0,
+    "placeholder": true,
+    "legacyDirectory": "public/media/studio/klyro-one"
+  },
+  {
+    "title": "СМАЧНО!",
+    "slug": "smachno",
+    "section": "studio",
+    "subtitle": "Food & Feeling",
+    "category": [
+      {
+        "value": "Commercial"
+      },
+      {
+        "value": "Social"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "year": 2026,
+    "description": "A playful food-delivery brand world spanning product films, character-driven advertising and social campaigns.",
+    "services": [
+      {
+        "value": "Creative Direction"
+      },
+      {
+        "value": "Visual Development"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "theme": "dark",
+    "featured": true,
+    "displayOrder": 10,
+    "placeholder": true,
+    "legacyDirectory": "public/media/studio/smachno"
+  },
+  {
+    "title": "NOIR//VOID",
+    "slug": "noir-void",
+    "section": "studio",
+    "subtitle": "After Dark",
+    "category": [
+      {
+        "value": "Branding"
+      },
+      {
+        "value": "Social"
+      }
+    ],
+    "year": 2026,
+    "description": "A fictional nightlife identity exploring fashion, club culture and experimental poster systems.",
+    "services": [
+      {
+        "value": "Creative Direction"
+      },
+      {
+        "value": "Visual Development"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "theme": "dark",
+    "featured": true,
+    "displayOrder": 20,
+    "placeholder": true,
+    "legacyDirectory": "public/media/studio/noir-void"
+  },
+  {
+    "title": "GALCHINO FC",
+    "slug": "galchino-fc",
+    "section": "studio",
+    "subtitle": "A Different Game",
+    "category": [
+      {
+        "value": "Sport"
+      },
+      {
+        "value": "Social"
+      }
+    ],
+    "year": 2026,
+    "description": "A football visual campaign built around stylized athlete characters and social-first sports graphics.",
+    "services": [
+      {
+        "value": "Creative Direction"
+      },
+      {
+        "value": "Visual Development"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "theme": "dark",
+    "featured": false,
+    "displayOrder": 30,
+    "placeholder": true,
+    "legacyDirectory": "public/media/studio/galchino-fc"
+  },
+  {
+    "title": "STYLE LAB",
+    "slug": "style-lab",
+    "section": "studio",
+    "subtitle": "Beyond the Expected",
+    "category": [
+      {
+        "value": "Experimental"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "year": 2026,
+    "description": "Experiments across anime, clay, knitted worlds, game cinematics, fantasy and stylized realism.",
+    "services": [
+      {
+        "value": "Creative Direction"
+      },
+      {
+        "value": "Visual Development"
+      },
+      {
+        "value": "Motion"
+      }
+    ],
+    "theme": "dark",
+    "featured": false,
+    "displayOrder": 40,
+    "placeholder": true,
+    "legacyDirectory": "public/media/studio/style-lab"
+  },
+  {
+    "title": "A Random Ride",
+    "slug": "random-ride",
+    "section": "multstory",
+    "subtitle": "Love Story",
+    "category": [
+      {
+        "value": "Personal Story"
+      }
+    ],
+    "year": 2026,
+    "description": "A chance meeting. An ordinary journey. The beginning of a world that belongs to two people.",
+    "services": [
+      {
+        "value": "Story Development"
+      },
+      {
+        "value": "Art Direction"
+      },
+      {
+        "value": "Animation"
+      }
+    ],
+    "theme": "warm",
+    "featured": true,
+    "displayOrder": 0,
+    "placeholder": true,
+    "legacyDirectory": "public/media/multstory/random-ride"
+  },
+  {
+    "title": "Two of Us",
+    "slug": "two-of-us",
+    "section": "multstory",
+    "subtitle": "Personal Animation",
+    "category": [
+      {
+        "value": "Personal Story"
+      }
+    ],
+    "year": 2026,
+    "description": "The small rituals, familiar places and quiet moments that make a life together.",
+    "services": [
+      {
+        "value": "Story Development"
+      },
+      {
+        "value": "Art Direction"
+      },
+      {
+        "value": "Animation"
+      }
+    ],
+    "theme": "warm",
+    "featured": true,
+    "displayOrder": 10,
+    "placeholder": true,
+    "legacyDirectory": "public/media/multstory/two-of-us"
+  },
+  {
+    "title": "Winter Memory",
+    "slug": "winter-memory",
+    "section": "multstory",
+    "subtitle": "Memory Film",
+    "category": [
+      {
+        "value": "Personal Story"
+      }
+    ],
+    "year": 2026,
+    "description": "Some seasons stay with us. A warm memory, brought back to life in a world of winter.",
+    "services": [
+      {
+        "value": "Story Development"
+      },
+      {
+        "value": "Art Direction"
+      },
+      {
+        "value": "Animation"
+      }
+    ],
+    "theme": "warm",
+    "featured": true,
+    "displayOrder": 20,
+    "placeholder": true,
+    "legacyDirectory": "public/media/multstory/winter-memory"
+  },
+  {
+    "title": "Our First Trip",
+    "slug": "our-first-trip",
+    "section": "multstory",
+    "subtitle": "Travel Story",
+    "category": [
+      {
+        "value": "Personal Story"
+      }
+    ],
+    "year": 2026,
+    "description": "A new place, a shared map, and the feeling that the journey has only just begun.",
+    "services": [
+      {
+        "value": "Story Development"
+      },
+      {
+        "value": "Art Direction"
+      },
+      {
+        "value": "Animation"
+      }
+    ],
+    "theme": "warm",
+    "featured": false,
+    "displayOrder": 30,
+    "placeholder": true,
+    "legacyDirectory": "public/media/multstory/our-first-trip"
+  },
+  {
+    "title": "For Mom",
+    "slug": "for-mom",
+    "section": "multstory",
+    "subtitle": "Personal Gift",
+    "category": [
+      {
+        "value": "Personal Story"
+      }
+    ],
+    "year": 2026,
+    "description": "For the person who made the everyday extraordinary. A little film with a lifetime inside.",
+    "services": [
+      {
+        "value": "Story Development"
+      },
+      {
+        "value": "Art Direction"
+      },
+      {
+        "value": "Animation"
+      }
+    ],
+    "theme": "warm",
+    "featured": false,
+    "displayOrder": 40,
+    "placeholder": true,
+    "legacyDirectory": "public/media/multstory/for-mom"
+  }
+]

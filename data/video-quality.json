@@ -1,0 +1,848 @@
+[
+  {
+    "slug": "noir-void",
+    "section": "studio",
+    "title": "NOIR//VOID — Nightlife Campaign",
+    "source": "/portfolio/studio/noir-void.mp4",
+    "originalFilename": "студио_пати_посты.mp4",
+    "sourceInfo": {
+      "width": 1080,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11403,
+      "duration": 20.09,
+      "bytes": 28628934,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/noir-void.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 960,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 1019,
+      "duration": 8.0,
+      "bytes": 1019406,
+      "audio": false
+    },
+    "web": "/portfolio/web/noir-void-1080.mp4",
+    "card": "/portfolio/web/noir-void-card-hq.mp4",
+    "poster": "/portfolio/web/noir-void-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/noir-void-still-1.jpg",
+      "/portfolio/web/noir-void-still-2.jpg",
+      "/portfolio/web/noir-void-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1080,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11403,
+      "duration": 20.09,
+      "bytes": 28629050,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "smachno-social",
+    "section": "studio",
+    "title": "СМАЧНО! — Social Campaign",
+    "source": "/portfolio/studio/smachno-social.mp4",
+    "originalFilename": "студио_посты_смачно.mp4",
+    "sourceInfo": {
+      "width": 1080,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11771,
+      "duration": 20.09,
+      "bytes": 29554683,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/smachno-social.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 960,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 823,
+      "duration": 8.0,
+      "bytes": 823214,
+      "audio": false
+    },
+    "web": "/portfolio/web/smachno-social-1080.mp4",
+    "card": "/portfolio/web/smachno-social-card-hq.mp4",
+    "poster": "/portfolio/web/smachno-social-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/smachno-social-still-1.jpg",
+      "/portfolio/web/smachno-social-still-2.jpg",
+      "/portfolio/web/smachno-social-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1080,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11771,
+      "duration": 20.09,
+      "bytes": 29554607,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "smachno-food",
+    "section": "studio",
+    "title": "СМАЧНО! — Food Commercial",
+    "source": "/portfolio/studio/smachno-food.mp4",
+    "originalFilename": "студио_рекламный_смачно.mp4",
+    "sourceInfo": {
+      "width": 1080,
+      "height": 1920,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11595,
+      "duration": 15.07,
+      "bytes": 21841270,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/smachno-food.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 1706,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 2042,
+      "duration": 8.0,
+      "bytes": 2042446,
+      "audio": false
+    },
+    "web": "/portfolio/web/smachno-food-1080.mp4",
+    "card": "/portfolio/web/smachno-food-card-hq.mp4",
+    "poster": "/portfolio/web/smachno-food-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/smachno-food-still-1.jpg",
+      "/portfolio/web/smachno-food-still-2.jpg",
+      "/portfolio/web/smachno-food-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1080,
+      "height": 1920,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11595,
+      "duration": 15.07,
+      "bytes": 21840737,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "smachno-delivery",
+    "section": "studio",
+    "title": "СМАЧНО! — Delivery Campaign",
+    "source": "/portfolio/studio/smachno-delivery.mp4",
+    "originalFilename": "студио_смачно_рекламный.mp4",
+    "sourceInfo": {
+      "width": 1080,
+      "height": 1450,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11419,
+      "duration": 17.86,
+      "bytes": 25489301,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/smachno-delivery.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 1288,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 2358,
+      "duration": 8.0,
+      "bytes": 2358158,
+      "audio": false
+    },
+    "web": "/portfolio/web/smachno-delivery-1080.mp4",
+    "card": "/portfolio/web/smachno-delivery-card-hq.mp4",
+    "poster": "/portfolio/web/smachno-delivery-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/smachno-delivery-still-1.jpg",
+      "/portfolio/web/smachno-delivery-still-2.jpg",
+      "/portfolio/web/smachno-delivery-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1080,
+      "height": 1450,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11419,
+      "duration": 17.86,
+      "bytes": 25488348,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "studio-experiment-01",
+    "section": "studio",
+    "title": "STUDIO EXPERIMENT 01",
+    "source": "/portfolio/studio/studio-experiment-01.mp4",
+    "originalFilename": "студио_пост_1.mp4",
+    "sourceInfo": {
+      "width": 1080,
+      "height": 1450,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 10267,
+      "duration": 9.92,
+      "bytes": 12725480,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/studio-experiment-01.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 1288,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 872,
+      "duration": 8.0,
+      "bytes": 872396,
+      "audio": false
+    },
+    "web": "/portfolio/web/studio-experiment-01-1080.mp4",
+    "card": "/portfolio/web/studio-experiment-01-card-hq.mp4",
+    "poster": "/portfolio/web/studio-experiment-01-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/studio-experiment-01-still-1.jpg",
+      "/portfolio/web/studio-experiment-01-still-2.jpg",
+      "/portfolio/web/studio-experiment-01-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1080,
+      "height": 1450,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 10267,
+      "duration": 9.91,
+      "bytes": 12724592,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "studio-experiment-02",
+    "section": "studio",
+    "title": "STUDIO EXPERIMENT 02",
+    "source": "/portfolio/studio/studio-experiment-02.mp4",
+    "originalFilename": "студио_пост_2.mp4",
+    "sourceInfo": {
+      "width": 1080,
+      "height": 1450,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 10143,
+      "duration": 11.08,
+      "bytes": 14043237,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/studio-experiment-02.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 1288,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 1056,
+      "duration": 8.0,
+      "bytes": 1056387,
+      "audio": false
+    },
+    "web": "/portfolio/web/studio-experiment-02-1080.mp4",
+    "card": "/portfolio/web/studio-experiment-02-card-hq.mp4",
+    "poster": "/portfolio/web/studio-experiment-02-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/studio-experiment-02-still-1.jpg",
+      "/portfolio/web/studio-experiment-02-still-2.jpg",
+      "/portfolio/web/studio-experiment-02-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1080,
+      "height": 1450,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 10142,
+      "duration": 11.08,
+      "bytes": 14042889,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "3d-story",
+    "section": "multstory",
+    "title": "3D Story",
+    "source": "/portfolio/multstory/3d-story.mp4",
+    "originalFilename": "мульт_3д.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12440,
+      "duration": 35.97,
+      "bytes": 55929986,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/3d-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 926,
+      "duration": 8.0,
+      "bytes": 926960,
+      "audio": false
+    },
+    "web": "/portfolio/web/3d-story-1080.mp4",
+    "card": "/portfolio/web/3d-story-card-hq.mp4",
+    "poster": "/portfolio/web/3d-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/3d-story-still-1.jpg",
+      "/portfolio/web/3d-story-still-2.jpg",
+      "/portfolio/web/3d-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12441,
+      "duration": 35.97,
+      "bytes": 55936910,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "cinematic-realism",
+    "section": "multstory",
+    "title": "Cinematic Realism",
+    "source": "/portfolio/multstory/cinematic-realism.mp4",
+    "originalFilename": "мульт_реализм.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12745,
+      "duration": 30.07,
+      "bytes": 47906159,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/cinematic-realism.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 997,
+      "duration": 8.0,
+      "bytes": 997339,
+      "audio": false
+    },
+    "web": "/portfolio/web/cinematic-realism-1080.mp4",
+    "card": "/portfolio/web/cinematic-realism-card-hq.mp4",
+    "poster": "/portfolio/web/cinematic-realism-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/cinematic-realism-still-1.jpg",
+      "/portfolio/web/cinematic-realism-still-2.jpg",
+      "/portfolio/web/cinematic-realism-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12746,
+      "duration": 30.07,
+      "bytes": 47911343,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "knitted-story",
+    "section": "multstory",
+    "title": "Knitted Story",
+    "source": "/portfolio/multstory/knitted-story.mp4",
+    "originalFilename": "мульт_вязанныйэ.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12686,
+      "duration": 27.89,
+      "bytes": 44225097,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/knitted-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 731,
+      "duration": 8.0,
+      "bytes": 731331,
+      "audio": false
+    },
+    "web": "/portfolio/web/knitted-story-1080.mp4",
+    "card": "/portfolio/web/knitted-story-card-hq.mp4",
+    "poster": "/portfolio/web/knitted-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/knitted-story-still-1.jpg",
+      "/portfolio/web/knitted-story-still-2.jpg",
+      "/portfolio/web/knitted-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12688,
+      "duration": 27.89,
+      "bytes": 44229245,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "clay-story",
+    "section": "multstory",
+    "title": "Clay Story",
+    "source": "/portfolio/multstory/clay-story.mp4",
+    "originalFilename": "мульт_пластилин.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12072,
+      "duration": 30.07,
+      "bytes": 45375663,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/clay-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 697,
+      "duration": 8.0,
+      "bytes": 697741,
+      "audio": false
+    },
+    "web": "/portfolio/web/clay-story-1080.mp4",
+    "card": "/portfolio/web/clay-story-card-hq.mp4",
+    "poster": "/portfolio/web/clay-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/clay-story-still-1.jpg",
+      "/portfolio/web/clay-story-still-2.jpg",
+      "/portfolio/web/clay-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12073,
+      "duration": 30.07,
+      "bytes": 45379375,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "2d-animation",
+    "section": "multstory",
+    "title": "2D Animation",
+    "source": "/portfolio/multstory/2d-animation.mp4",
+    "originalFilename": "мульт_2д.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12417,
+      "duration": 35.48,
+      "bytes": 55069701,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/2d-animation.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 799,
+      "duration": 8.0,
+      "bytes": 799579,
+      "audio": false
+    },
+    "web": "/portfolio/web/2d-animation-1080.mp4",
+    "card": "/portfolio/web/2d-animation-card-hq.mp4",
+    "poster": "/portfolio/web/2d-animation-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/2d-animation-still-1.jpg",
+      "/portfolio/web/2d-animation-still-2.jpg",
+      "/portfolio/web/2d-animation-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12416,
+      "duration": 35.48,
+      "bytes": 55068739,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "anime-story",
+    "section": "multstory",
+    "title": "Anime Story",
+    "source": "/portfolio/multstory/anime-story.mp4",
+    "originalFilename": "мульт_анимэ.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12681,
+      "duration": 30.07,
+      "bytes": 47666319,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/anime-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 693,
+      "duration": 8.0,
+      "bytes": 693722,
+      "audio": false
+    },
+    "web": "/portfolio/web/anime-story-1080.mp4",
+    "card": "/portfolio/web/anime-story-card-hq.mp4",
+    "poster": "/portfolio/web/anime-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/anime-story-still-1.jpg",
+      "/portfolio/web/anime-story-still-2.jpg",
+      "/portfolio/web/anime-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12682,
+      "duration": 30.07,
+      "bytes": 47670907,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "brick-world",
+    "section": "multstory",
+    "title": "Brick World",
+    "source": "/portfolio/multstory/brick-world.mp4",
+    "originalFilename": "мульт_лего.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12022,
+      "duration": 29.28,
+      "bytes": 44002645,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/brick-world.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 1375,
+      "duration": 8.0,
+      "bytes": 1375338,
+      "audio": false
+    },
+    "web": "/portfolio/web/brick-world-1080.mp4",
+    "card": "/portfolio/web/brick-world-card-hq.mp4",
+    "poster": "/portfolio/web/brick-world-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/brick-world-still-1.jpg",
+      "/portfolio/web/brick-world-still-2.jpg",
+      "/portfolio/web/brick-world-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12022,
+      "duration": 29.28,
+      "bytes": 44001757,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "gender-reveal",
+    "section": "multstory",
+    "title": "Gender Reveal Story",
+    "source": "/portfolio/multstory/gender-reveal.mp4",
+    "originalFilename": "мульт_гендер_пати.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12862,
+      "duration": 31.97,
+      "bytes": 51408907,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/gender-reveal.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 540,
+      "duration": 8.0,
+      "bytes": 540655,
+      "audio": false
+    },
+    "web": "/portfolio/web/gender-reveal-1080.mp4",
+    "card": "/portfolio/web/gender-reveal-card-hq.mp4",
+    "poster": "/portfolio/web/gender-reveal-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/gender-reveal-still-1.jpg",
+      "/portfolio/web/gender-reveal-still-2.jpg",
+      "/portfolio/web/gender-reveal-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12864,
+      "duration": 31.97,
+      "bytes": 51414265,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "child-story",
+    "section": "multstory",
+    "title": "A Story for a Child",
+    "source": "/portfolio/multstory/child-story.mp4",
+    "originalFilename": "мульт_для_ребёнка.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12142,
+      "duration": 30.72,
+      "bytes": 46628359,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/child-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 1083,
+      "duration": 8.0,
+      "bytes": 1083603,
+      "audio": false
+    },
+    "web": "/portfolio/web/child-story-1080.mp4",
+    "card": "/portfolio/web/child-story-card-hq.mp4",
+    "poster": "/portfolio/web/child-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/child-story-still-1.jpg",
+      "/portfolio/web/child-story-still-2.jpg",
+      "/portfolio/web/child-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12143,
+      "duration": 30.72,
+      "bytes": 46630878,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "family-story",
+    "section": "multstory",
+    "title": "Family Story",
+    "source": "/portfolio/multstory/family-story.mp4",
+    "originalFilename": "мульт_про_семью.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11643,
+      "duration": 35.71,
+      "bytes": 51978332,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/family-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 759,
+      "duration": 8.0,
+      "bytes": 759498,
+      "audio": false
+    },
+    "web": "/portfolio/web/family-story-1080.mp4",
+    "card": "/portfolio/web/family-story-card-hq.mp4",
+    "poster": "/portfolio/web/family-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/family-story-still-1.jpg",
+      "/portfolio/web/family-story-still-2.jpg",
+      "/portfolio/web/family-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 11644,
+      "duration": 35.71,
+      "bytes": 51979592,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "love-story",
+    "section": "multstory",
+    "title": "Love Story",
+    "source": "/portfolio/multstory/love-story.mp4",
+    "originalFilename": "мульт_про_отношения.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12102,
+      "duration": 35.02,
+      "bytes": 52972937,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/love-story.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 384,
+      "duration": 8.0,
+      "bytes": 384498,
+      "audio": false
+    },
+    "web": "/portfolio/web/love-story-1080.mp4",
+    "card": "/portfolio/web/love-story-card-hq.mp4",
+    "poster": "/portfolio/web/love-story-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/love-story-still-1.jpg",
+      "/portfolio/web/love-story-still-2.jpg",
+      "/portfolio/web/love-story-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12104,
+      "duration": 35.02,
+      "bytes": 52978573,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  },
+  {
+    "slug": "the-proposal",
+    "section": "multstory",
+    "title": "The Proposal",
+    "source": "/portfolio/multstory/the-proposal.mp4",
+    "originalFilename": "мульт_предложение.mp4",
+    "sourceInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12696,
+      "duration": 30.07,
+      "bytes": 47723858,
+      "audio": true
+    },
+    "previousWebsite": "/portfolio/previews/the-proposal.mp4",
+    "previousInfo": {
+      "width": 960,
+      "height": 540,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 712,
+      "duration": 8.0,
+      "bytes": 712538,
+      "audio": false
+    },
+    "web": "/portfolio/web/the-proposal-1080.mp4",
+    "card": "/portfolio/web/the-proposal-card-hq.mp4",
+    "poster": "/portfolio/web/the-proposal-poster-hq.jpg",
+    "gallery": [
+      "/portfolio/web/the-proposal-still-1.jpg",
+      "/portfolio/web/the-proposal-still-2.jpg",
+      "/portfolio/web/the-proposal-still-3.jpg"
+    ],
+    "webInfo": {
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel": "yuv420p",
+      "bitrate": 12696,
+      "duration": 30.07,
+      "bytes": 47722868,
+      "audio": true
+    },
+    "method": "Lossless stream copy; original H.264 video preserved, faststart added"
+  }
+]

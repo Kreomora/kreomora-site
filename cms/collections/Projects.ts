@@ -1,0 +1,18 @@
+import type {CollectionConfig,UploadField} from 'payload';
+import {authenticated,publishedOrAuthenticated} from '../access';
+const image=(name:string,required=false):UploadField=>({name,type:'upload',relationTo:'media',required,filterOptions:{mimeType:{contains:'image/'}}});
+const video=(name:string):UploadField=>({name,type:'upload',relationTo:'media',filterOptions:{mimeType:{contains:'video/'}}});
+export const Projects:CollectionConfig={
+ slug:'projects',admin:{useAsTitle:'title',defaultColumns:['title','section','_status','displayOrder','featured'],description:'Lower Display order appears first. Save drafts privately; Publish makes changes live immediately.'},defaultSort:'displayOrder',
+ access:{create:authenticated,read:publishedOrAuthenticated,update:authenticated,delete:authenticated,readVersions:authenticated},versions:{drafts:true,maxPerDoc:30},
+ fields:[{name:'displayTitle',type:'text',localized:true,admin:{description:'Localized public title. Original title below is preserved as fallback.'}},{name:'summary',type:'textarea',localized:true},{name:'intro',type:'textarea',localized:true},{name:'seoDescription',type:'textarea',localized:true},{name:'categoryLabel',type:'text',localized:true},{name:'title',type:'text',required:true},{name:'slug',type:'text',required:true,unique:true,index:true,validate:(value:unknown)=>typeof value==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value)&&!['work','stories','admin','api'].includes(value)?true:'Use a unique lowercase slug with hyphens; work and stories are reserved.'},
+ {name:'section',type:'select',required:true,options:[{label:'STUDIO',value:'studio'},{label:'MULTSTORY',value:'multstory'}],index:true},{name:'subtitle',type:'text'},
+ {name:'category',type:'array',fields:[{name:'value',type:'text',required:true}]},{name:'year',type:'number',required:true,min:1900,max:2200,defaultValue:()=>new Date().getFullYear()},
+ {name:'description',type:'textarea',required:true},{name:'services',type:'array',fields:[{name:'value',type:'text',required:true}]},image('cover',true),video('coverVideo'),video('heroVideo'),
+ {name:'gallery',type:'array',fields:[image('image',true)]},{name:'additionalVideos',type:'array',fields:[{name:'displayTitle',type:'text',localized:true,admin:{description:'Localized public title. Original title below is preserved as fallback.'}},{name:'summary',type:'textarea',localized:true},{name:'intro',type:'textarea',localized:true},{name:'seoDescription',type:'textarea',localized:true},{name:'categoryLabel',type:'text',localized:true},{name:'title',type:'text',required:true},{...video('video'),required:true},image('poster')]},
+ {name:'theme',type:'select',required:true,defaultValue:'dark',options:['dark','warm'],admin:{position:'sidebar'}},{name:'featured',type:'checkbox',defaultValue:false,admin:{position:'sidebar',description:'Show in Selected Worlds on the homepage.'}},
+ {name:'displayOrder',type:'number',required:true,defaultValue:0,index:true,admin:{position:'sidebar',description:'Ascending order. Use 10, 20, 30 to leave space.'}},{name:'placeholder',type:'checkbox',defaultValue:false,admin:{position:'sidebar'}}],
+ hooks:{beforeChange:[async({data,req})=>{if(data._status!=='published')return data;
+ const refs=[data.cover,data.coverVideo,data.heroVideo,...(data.gallery||[]).map((g:{image:unknown})=>g.image),...(data.additionalVideos||[]).flatMap((v:{video:unknown;poster:unknown})=>[v.video,v.poster])].filter(Boolean);
+ for(const ref of refs){const id=typeof ref==='object'?ref.id:ref;const media=await req.payload.findByID({collection:'media',id,req,overrideAccess:true});if(media.visibility!=='public')throw new Error('All media must be public before publishing.');}return data;}]},
+};

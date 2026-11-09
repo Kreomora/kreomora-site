@@ -1,0 +1,21 @@
+// Translations describe supplied films without inventing clients or production facts.
+export const projectTranslations:Record<string,[string,string,string,string]>={
+ 'noir-void':['NOIR//VOID','NOIR//VOID','Клубная кампания','Nightlife Campaign'],
+ 'smachno-social':['СМАЧНО!','СМАЧНО!','Кампания в соцсетях','Social Campaign'],
+ 'smachno-food':['СМАЧНО!','СМАЧНО!','Рекламный ролик','Food Commercial'],
+ 'smachno-delivery':['СМАЧНО!','СМАЧНО!','Кампания доставки','Delivery Campaign'],
+ 'studio-experiment-01':['Визуальный эксперимент 01','STUDIO EXPERIMENT 01','Спортивная анимация','Sports Animation'],
+ 'studio-experiment-02':['Визуальный эксперимент 02','STUDIO EXPERIMENT 02','Спортивная анимация','Sports Animation'],
+ '3d-story':['3D-история','3D Story','3D-анимация','3D Animation'],
+ 'cinematic-realism':['Кинематографичный реализм','Cinematic Realism','Реализм','Cinematic'],
+ 'knitted-story':['Вязаная история','Knitted Story','Вязаная анимация','Knitted Animation'],
+ 'clay-story':['Пластилиновая история','Clay Story','Пластилиновая анимация','Clay Animation'],
+ '2d-animation':['2D-анимация','2D Animation','2D-анимация','2D Animation'],
+ 'anime-story':['Аниме-история','Anime Story','Аниме','Anime'],
+ 'brick-world':['Мир конструктора','Brick World','Анимация из конструктора','Brick Animation'],
+ 'gender-reveal':['История Gender Reveal','Gender Reveal Story','Персональный фильм','Personal Film'],
+ 'child-story':['История для ребёнка','A Story for a Child','Персональный фильм','Personal Film'],
+ 'family-story':['Семейная история','Family Story','Персональный фильм','Personal Film'],
+ 'love-story':['История отношений','Love Story','Персональный фильм','Personal Film'],
+ 'the-proposal':['Предложение','The Proposal','Персональный фильм','Personal Film'],
+};
