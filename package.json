@@ -21,17 +21,15 @@
     "test:i18n": "node scripts/test-localization.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "export:pages-content": "node scripts/export-pages-content.mjs",
-    "test:pages": "node scripts/test-pages.mjs"
+    "test:pages": "node scripts/test-pages.mjs",
+    "export:portfolio-content": "node scripts/export-portfolio-content.mjs",
+    "test:production": "node scripts/test-production.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@payloadcms/db-sqlite": "3.93.0",
-    "@payloadcms/next": "3.93.0",
-    "graphql": "16.15.0",
     "next": "^16.4.5",
-    "payload": "3.93.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "sharp": "0.35.5"
@@ -43,7 +41,11 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.5",
     "tsx": "^4.23.15",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "@payloadcms/db-sqlite": "3.93.0",
+    "@payloadcms/next": "3.93.0",
+    "payload": "3.93.0",
+    "graphql": "16.15.0"
   },
   "type": "module",
   "engines": {

@@ -40,6 +40,8 @@
   ],
   "exclude": [
     "node_modules",
-    ".pages-build"
+    ".pages-build",
+    "cms/archived-app",
+    "tmp"
   ]
 }

@@ -1,74 +1,46 @@
 # KREOMORA
 
-Next.js 16 + Payload CMS 3 + SQLite. Real portfolio: 6 STUDIO films and 12 MULTSTORY films.
+Public Next.js 16 portfolio: 6 STUDIO projects and 12 MULTSTORY projects, in Russian and English. Production has no Payload initialization, admin routes, CMS API or database dependency.
 
-## Start
+## Development and Netlify
 
-When cloning this repository, install Git LFS and run `git lfs pull` to download the public portfolio videos. Git stores these videos as LFS objects; all other public assets remain ordinary source files. Local `.env`, SQLite databases, backups, CMS uploads and administrator credentials are intentionally excluded. Set up fresh local credentials and import the public portfolio into CMS; never copy private storage into Git.
+Use Node 22.23.4 or a supported newer version from package.json. Download existing public video objects with `git lfs pull` when cloning.
 
 ```sh
-npm install
-npm run cms:setup
+npm ci
 npm run dev
-```
-
-Open http://localhost:3000 and http://localhost:3000/admin. Existing local accounts are preserved. To create your own administrator run `npm run cms:admin` and enter your email, name and password in the terminal.
-
-## Media and CMS import
-
-Original files in Downloads are read/copied only, never moved or deleted.
-
-- `public/brand/`: the three supplied brand originals, copied without modification.
-- `public/portfolio/studio/` and `public/portfolio/multstory/`: full original films.
-- `public/portfolio/previews/`: silent eight-second previews, about 0.4–2.4 MB each.
-- `public/portfolio/posters/`: 18 posters and 54 film stills.
-- `data/portfolio-import.json`: original filenames, public paths, titles, dimensions, duration and section.
-- `PORTFOLIO_INVENTORY.md` and `PORTFOLIO_MEDIA_MAP.md`: import audit.
-- `storage/kreomora.db` and `storage/media/`: live Payload data and uploaded media. Back these up together.
-
-Prepare assets with `python scripts/prepare-portfolio.py` (set `FFMPEG_PATH` to an FFmpeg executable). Import with:
-
-```sh
-node --env-file=.env --import tsx scripts/import-portfolio.ts
-```
-
-The importer is repeatable, skips existing real projects and preserves legacy placeholders under archive slugs if they collide. Public queries exclude placeholders. Edit projects in `/admin/collections/projects`; publish to make changes visible. Media visibility must be public before project publication. Years default to 2026 as a catalog year; verify actual production dates in CMS.
-
-## Routes
-
-Public routes have `/ru` and `/en` prefixes: `/`, `/studio`, `/studio/work`, `/studio/[slug]`, `/multstory`, `/multstory/stories`, `/multstory/[slug]`, `/about`, `/contact`. Old unprefixed links redirect using the saved language (Russian by default). `/admin`, `/api`, `/sitemap.xml`, `/robots.txt` remain unprefixed. See `LOCALIZATION_GUIDE.md`.
-
-## Before public launch
-
-Set `NEXT_PUBLIC_SITE_URL` to the final domain. Official contacts are centralized in `data/contact.ts`: Telegram https://t.me/KreomoraX (primary), kreomora@mail.ru (secondary), VK https://vk.ru/club243109699 (tertiary). Public contact forms and mock submission code are removed. Telegram buttons open encoded drafts; email buttons include localized subjects and bodies. All five contexts and exact templates are documented in `CONTACT_DRAFTS.md`. Run `node --import tsx scripts/test-contact-drafts.ts` against the local server to verify them. Check project production years and neutral STUDIO EXPERIMENT 01/02 titles in CMS.
-
-## Current high-quality video workflow
-
-The original import's low-resolution previews remain archived. Published projects now use 18 full-resolution faststart films and 18 sharp card clips in `public/portfolio/web/`, plus native-resolution posters/stills. Hero and full-film references use the complete film, cards use the silent clip. All original files are retained.
-
-```sh
-python -m pip install imageio-ffmpeg
-python scripts/optimize-portfolio.py
-node --env-file=.env --import tsx scripts/import-video-quality.ts
-```
-
-The media importer updates media relationships only, preserving project IDs and localized content. Back up SQLite and media together before running. See `VIDEO_QUALITY_REPORT.md` for all 18 source audits and `LAUNCH_QA.md` for the final checklist.
-
-## Validation and production
-
-```sh
-npm run typecheck
-npm run lint
+# Production / Netlify:
 npm run build
 npm start
 ```
 
-This is a server-backed application, not a static export. The old `out/` directory is not the current site. Hosting needs a Node server and persistent SQLite/media storage, or a suitable Payload database/storage deployment. No new hosted deployment was made by this local update.
+Keep the existing Netlify Next.js configuration and `npm run build` command. Output is `.next`; the separate Pages export is not the Netlify build. No CMS secret, database configuration, admin account or CMS API is required. `NEXT_PUBLIC_SITE_URL` is optional metadata configuration for the public domain.
 
-## Bilingual content
+## Public content and routes
 
-UI dictionaries: `data/translations.ts`. Payload locales: Russian (default) and English. Localized fields: `displayTitle`, `summary`, `intro`, `seoDescription`, `categoryLabel`. Original fields and all media references are preserved. All 18 real projects have both translations; archived legacy placeholders are not translated or publicly shown.
+`data/portfolio.json` contains public published content for all 18 projects in both languages. `lib/projects.ts` reads this file. Ordering, translations, full-quality films, silent high-quality card clips and posters in `public/portfolio/web/` are preserved. No video has been recompressed or removed.
 
-Run `npm run cms:localize` after importing new copies of the supplied portfolio. The script fills missing translations without replacing edits. `npm run test:i18n` verifies 50 public pages and shared CMS media against the running local server.
+Existing `/ru` and `/en` routes, language cookies and unprefixed redirects are preserved: home, studio, studio/work, studio/[slug], multstory, multstory/stories, multstory/[slug], about and contact. `/admin` and `/api/projects` return 404.
 
-New official mascot assets are in `public/brand/mascot/`. The transparent PNG is an unchanged copy; four WebP versions preserve source proportions.
+Contacts remain in `data/contact.ts` and `lib/contact.ts`, including Telegram drafts and email subjects/bodies.
+
+## Archived CMS
+
+Collections, configuration, scripts, types and ignored local storage are retained. Former Next routes are archived in `cms/archived-app/`, outside Next routing. The original loader and Next configuration are in `cms/archived-projects.ts` and `cms/next.config.ts`. Payload packages are development-only dependencies for archived tooling; public imports and production deployment traces must not include them.
+
+`cms/LEGACY_CMS_README.md` is historical documentation, not current production setup. CMS CLI commands are optional legacy tools, not build prerequisites. Restoring an admin server requires explicitly restoring its route/config integration.
+
+To export from a separately running legacy CMS, `npm run export:portfolio-content` reads only public published records and validates public media files. Review and commit the resulting snapshot. Production never calls this exporter.
+
+## Checks
+
+```sh
+npm run lint
+npm run typecheck
+npm run build
+npm run test:production
+# With npm start running:
+npm run test:i18n
+```
+
+`test:production` checks the route manifest, deployment traces, content/media paths and actual MP4 headers. `test:i18n` checks all 50 localized public pages and verifies admin/API routes are absent. The separate Pages workflow and its limitations are documented in `PAGES_DEPLOY.md`.

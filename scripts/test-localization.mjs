@@ -18,8 +18,8 @@ for(const locale of ['ru','en']){
 }
 assert.equal((await fetch(base+'/',{redirect:'manual'})).headers.get('location'),'/ru/');
 assert.equal((await fetch(base+'/ru/unknown-project/')).status,404);
-assert.equal((await fetch(base+'/admin/')).status,200);
-const ru=await (await fetch(base+'/api/projects/?where[placeholder][not_equals]=true&limit=100&locale=ru&depth=0')).json();
-const en=await (await fetch(base+'/api/projects/?where[placeholder][not_equals]=true&limit=100&locale=en&depth=0')).json();assert.equal(ru.docs.length,18);assert.equal(en.docs.length,18);
-for(const p of ru.docs){const q=en.docs.find(x=>x.id===p.id);assert(q);for(const field of ['displayTitle','summary','intro','seoDescription','categoryLabel']){assert(p[field],p.slug+' ru '+field);assert(q[field],p.slug+' en '+field);}for(const field of ['cover','heroVideo','coverVideo'])assert.equal(p[field],q[field]);}
-console.log(`PASS: ${pages} localized pages, ${contacts} email links, RU default, cookie preferences, hreflang, 404, admin, 18 bilingual projects and shared media.`);
+for(const route of ['/admin/','/api/projects/','/ru/admin/','/en/admin/'])assert.equal((await fetch(base+route)).status,404,route+' removed');
+const portfolio=JSON.parse(await fs.readFile('data/portfolio.json','utf8'));
+assert.equal(portfolio.ru.length,18);assert.equal(portfolio.en.length,18);
+for(const p of portfolio.ru){const q=portfolio.en.find(x=>x.id===p.id);assert(q);for(const field of ['title','description','intro','seoDescription','subtitle']){assert(p[field],p.slug+' ru '+field);assert(q[field],p.slug+' en '+field);}for(const field of ['cover','heroVideo','coverVideo'])assert.equal(p[field],q[field]);}
+console.log(`PASS: ${pages} localized pages, ${contacts} email links, RU default, cookie preferences, hreflang, 404, no admin/API, 18 bilingual projects and shared local media.`);

@@ -1,0 +1,1158 @@
+{
+  "ru": [
+    {
+      "id": 28,
+      "aspectRatio": 1,
+      "title": "NOIR//VOID",
+      "slug": "noir-void",
+      "subtitle": "Клубная кампания",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Клубная кампания"
+      ],
+      "services": [
+        "Клубная кампания"
+      ],
+      "description": "NOIR//VOID — клубная кампания. Коммерческая работа KREOMORA STUDIO.",
+      "intro": "NOIR//VOID — клубная кампания. Коммерческая работа KREOMORA STUDIO.",
+      "seoDescription": "NOIR//VOID — клубная кампания. Коммерческая работа KREOMORA STUDIO.",
+      "cover": "/portfolio/web/noir-void-poster-hq.jpg",
+      "coverAlt": "NOIR//VOID",
+      "coverVideo": "/portfolio/web/noir-void-card-hq.mp4",
+      "heroVideo": "/portfolio/web/noir-void-1080.mp4",
+      "gallery": [
+        "/portfolio/web/noir-void-still-1.jpg",
+        "/portfolio/web/noir-void-still-2.jpg",
+        "/portfolio/web/noir-void-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 10,
+      "placeholder": false
+    },
+    {
+      "id": 11,
+      "aspectRatio": 1,
+      "title": "СМАЧНО!",
+      "slug": "smachno-social",
+      "subtitle": "Кампания в соцсетях",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Кампания в соцсетях"
+      ],
+      "services": [
+        "Кампания в соцсетях"
+      ],
+      "description": "СМАЧНО! — кампания в соцсетях. Коммерческая работа KREOMORA STUDIO.",
+      "intro": "СМАЧНО! — кампания в соцсетях. Коммерческая работа KREOMORA STUDIO.",
+      "seoDescription": "СМАЧНО! — кампания в соцсетях. Коммерческая работа KREOMORA STUDIO.",
+      "cover": "/portfolio/web/smachno-social-poster-hq.jpg",
+      "coverAlt": "СМАЧНО!",
+      "coverVideo": "/portfolio/web/smachno-social-card-hq.mp4",
+      "heroVideo": "/portfolio/web/smachno-social-1080.mp4",
+      "gallery": [
+        "/portfolio/web/smachno-social-still-1.jpg",
+        "/portfolio/web/smachno-social-still-2.jpg",
+        "/portfolio/web/smachno-social-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 20,
+      "placeholder": false
+    },
+    {
+      "id": 12,
+      "aspectRatio": 0.5625,
+      "title": "СМАЧНО!",
+      "slug": "smachno-food",
+      "subtitle": "Рекламный ролик",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Рекламный ролик"
+      ],
+      "services": [
+        "Рекламный ролик"
+      ],
+      "description": "СМАЧНО! — рекламный ролик. Коммерческая работа KREOMORA STUDIO.",
+      "intro": "СМАЧНО! — рекламный ролик. Коммерческая работа KREOMORA STUDIO.",
+      "seoDescription": "СМАЧНО! — рекламный ролик. Коммерческая работа KREOMORA STUDIO.",
+      "cover": "/portfolio/web/smachno-food-poster-hq.jpg",
+      "coverAlt": "СМАЧНО!",
+      "coverVideo": "/portfolio/web/smachno-food-card-hq.mp4",
+      "heroVideo": "/portfolio/web/smachno-food-1080.mp4",
+      "gallery": [
+        "/portfolio/web/smachno-food-still-1.jpg",
+        "/portfolio/web/smachno-food-still-2.jpg",
+        "/portfolio/web/smachno-food-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 30,
+      "placeholder": false
+    },
+    {
+      "id": 13,
+      "aspectRatio": 0.7448275862068966,
+      "title": "СМАЧНО!",
+      "slug": "smachno-delivery",
+      "subtitle": "Кампания доставки",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Кампания доставки"
+      ],
+      "services": [
+        "Кампания доставки"
+      ],
+      "description": "СМАЧНО! — кампания доставки. Коммерческая работа KREOMORA STUDIO.",
+      "intro": "СМАЧНО! — кампания доставки. Коммерческая работа KREOMORA STUDIO.",
+      "seoDescription": "СМАЧНО! — кампания доставки. Коммерческая работа KREOMORA STUDIO.",
+      "cover": "/portfolio/web/smachno-delivery-poster-hq.jpg",
+      "coverAlt": "СМАЧНО!",
+      "coverVideo": "/portfolio/web/smachno-delivery-card-hq.mp4",
+      "heroVideo": "/portfolio/web/smachno-delivery-1080.mp4",
+      "gallery": [
+        "/portfolio/web/smachno-delivery-still-1.jpg",
+        "/portfolio/web/smachno-delivery-still-2.jpg",
+        "/portfolio/web/smachno-delivery-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 40,
+      "placeholder": false
+    },
+    {
+      "id": 14,
+      "aspectRatio": 0.7448275862068966,
+      "title": "Визуальный эксперимент 01",
+      "slug": "studio-experiment-01",
+      "subtitle": "Спортивная анимация",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Спортивная анимация"
+      ],
+      "services": [
+        "Спортивная анимация"
+      ],
+      "description": "Визуальный эксперимент 01 — спортивная анимация. Коммерческая работа KREOMORA STUDIO.",
+      "intro": "Визуальный эксперимент 01 — спортивная анимация. Коммерческая работа KREOMORA STUDIO.",
+      "seoDescription": "Визуальный эксперимент 01 — спортивная анимация. Коммерческая работа KREOMORA STUDIO.",
+      "cover": "/portfolio/web/studio-experiment-01-poster-hq.jpg",
+      "coverAlt": "Визуальный эксперимент 01",
+      "coverVideo": "/portfolio/web/studio-experiment-01-card-hq.mp4",
+      "heroVideo": "/portfolio/web/studio-experiment-01-1080.mp4",
+      "gallery": [
+        "/portfolio/web/studio-experiment-01-still-1.jpg",
+        "/portfolio/web/studio-experiment-01-still-2.jpg",
+        "/portfolio/web/studio-experiment-01-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 50,
+      "placeholder": false
+    },
+    {
+      "id": 15,
+      "aspectRatio": 0.7448275862068966,
+      "title": "Визуальный эксперимент 02",
+      "slug": "studio-experiment-02",
+      "subtitle": "Спортивная анимация",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Спортивная анимация"
+      ],
+      "services": [
+        "Спортивная анимация"
+      ],
+      "description": "Визуальный эксперимент 02 — спортивная анимация. Коммерческая работа KREOMORA STUDIO.",
+      "intro": "Визуальный эксперимент 02 — спортивная анимация. Коммерческая работа KREOMORA STUDIO.",
+      "seoDescription": "Визуальный эксперимент 02 — спортивная анимация. Коммерческая работа KREOMORA STUDIO.",
+      "cover": "/portfolio/web/studio-experiment-02-poster-hq.jpg",
+      "coverAlt": "Визуальный эксперимент 02",
+      "coverVideo": "/portfolio/web/studio-experiment-02-card-hq.mp4",
+      "heroVideo": "/portfolio/web/studio-experiment-02-1080.mp4",
+      "gallery": [
+        "/portfolio/web/studio-experiment-02-still-1.jpg",
+        "/portfolio/web/studio-experiment-02-still-2.jpg",
+        "/portfolio/web/studio-experiment-02-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 60,
+      "placeholder": false
+    },
+    {
+      "id": 16,
+      "aspectRatio": 1.7777777777777777,
+      "title": "3D-история",
+      "slug": "3d-story",
+      "subtitle": "3D-анимация",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "3D-анимация"
+      ],
+      "services": [
+        "3D-анимация"
+      ],
+      "description": "3D-история — 3d-анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "3D-история — 3d-анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "3D-история — 3d-анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/3d-story-poster-hq.jpg",
+      "coverAlt": "3D-история",
+      "coverVideo": "/portfolio/web/3d-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/3d-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/3d-story-still-1.jpg",
+        "/portfolio/web/3d-story-still-2.jpg",
+        "/portfolio/web/3d-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 70,
+      "placeholder": false
+    },
+    {
+      "id": 17,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Кинематографичный реализм",
+      "slug": "cinematic-realism",
+      "subtitle": "Реализм",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Реализм"
+      ],
+      "services": [
+        "Реализм"
+      ],
+      "description": "Кинематографичный реализм — реализм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Кинематографичный реализм — реализм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Кинематографичный реализм — реализм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/cinematic-realism-poster-hq.jpg",
+      "coverAlt": "Кинематографичный реализм",
+      "coverVideo": "/portfolio/web/cinematic-realism-card-hq.mp4",
+      "heroVideo": "/portfolio/web/cinematic-realism-1080.mp4",
+      "gallery": [
+        "/portfolio/web/cinematic-realism-still-1.jpg",
+        "/portfolio/web/cinematic-realism-still-2.jpg",
+        "/portfolio/web/cinematic-realism-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 80,
+      "placeholder": false
+    },
+    {
+      "id": 18,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Вязаная история",
+      "slug": "knitted-story",
+      "subtitle": "Вязаная анимация",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Вязаная анимация"
+      ],
+      "services": [
+        "Вязаная анимация"
+      ],
+      "description": "Вязаная история — вязаная анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Вязаная история — вязаная анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Вязаная история — вязаная анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/knitted-story-poster-hq.jpg",
+      "coverAlt": "Вязаная история",
+      "coverVideo": "/portfolio/web/knitted-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/knitted-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/knitted-story-still-1.jpg",
+        "/portfolio/web/knitted-story-still-2.jpg",
+        "/portfolio/web/knitted-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 90,
+      "placeholder": false
+    },
+    {
+      "id": 19,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Пластилиновая история",
+      "slug": "clay-story",
+      "subtitle": "Пластилиновая анимация",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Пластилиновая анимация"
+      ],
+      "services": [
+        "Пластилиновая анимация"
+      ],
+      "description": "Пластилиновая история — пластилиновая анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Пластилиновая история — пластилиновая анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Пластилиновая история — пластилиновая анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/clay-story-poster-hq.jpg",
+      "coverAlt": "Пластилиновая история",
+      "coverVideo": "/portfolio/web/clay-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/clay-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/clay-story-still-1.jpg",
+        "/portfolio/web/clay-story-still-2.jpg",
+        "/portfolio/web/clay-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 100,
+      "placeholder": false
+    },
+    {
+      "id": 20,
+      "aspectRatio": 1.7777777777777777,
+      "title": "2D-анимация",
+      "slug": "2d-animation",
+      "subtitle": "2D-анимация",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "2D-анимация"
+      ],
+      "services": [
+        "2D-анимация"
+      ],
+      "description": "2D-анимация — 2d-анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "2D-анимация — 2d-анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "2D-анимация — 2d-анимация. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/2d-animation-poster-hq.jpg",
+      "coverAlt": "2D-анимация",
+      "coverVideo": "/portfolio/web/2d-animation-card-hq.mp4",
+      "heroVideo": "/portfolio/web/2d-animation-1080.mp4",
+      "gallery": [
+        "/portfolio/web/2d-animation-still-1.jpg",
+        "/portfolio/web/2d-animation-still-2.jpg",
+        "/portfolio/web/2d-animation-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 110,
+      "placeholder": false
+    },
+    {
+      "id": 21,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Аниме-история",
+      "slug": "anime-story",
+      "subtitle": "Аниме",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Аниме"
+      ],
+      "services": [
+        "Аниме"
+      ],
+      "description": "Аниме-история — аниме. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Аниме-история — аниме. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Аниме-история — аниме. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/anime-story-poster-hq.jpg",
+      "coverAlt": "Аниме-история",
+      "coverVideo": "/portfolio/web/anime-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/anime-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/anime-story-still-1.jpg",
+        "/portfolio/web/anime-story-still-2.jpg",
+        "/portfolio/web/anime-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 120,
+      "placeholder": false
+    },
+    {
+      "id": 22,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Мир конструктора",
+      "slug": "brick-world",
+      "subtitle": "Анимация из конструктора",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Анимация из конструктора"
+      ],
+      "services": [
+        "Анимация из конструктора"
+      ],
+      "description": "Мир конструктора — анимация из конструктора. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Мир конструктора — анимация из конструктора. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Мир конструктора — анимация из конструктора. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/brick-world-poster-hq.jpg",
+      "coverAlt": "Мир конструктора",
+      "coverVideo": "/portfolio/web/brick-world-card-hq.mp4",
+      "heroVideo": "/portfolio/web/brick-world-1080.mp4",
+      "gallery": [
+        "/portfolio/web/brick-world-still-1.jpg",
+        "/portfolio/web/brick-world-still-2.jpg",
+        "/portfolio/web/brick-world-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 130,
+      "placeholder": false
+    },
+    {
+      "id": 23,
+      "aspectRatio": 1.7777777777777777,
+      "title": "История Gender Reveal",
+      "slug": "gender-reveal",
+      "subtitle": "Персональный фильм",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Персональный фильм"
+      ],
+      "services": [
+        "Персональный фильм"
+      ],
+      "description": "История Gender Reveal — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "История Gender Reveal — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "История Gender Reveal — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/gender-reveal-poster-hq.jpg",
+      "coverAlt": "История Gender Reveal",
+      "coverVideo": "/portfolio/web/gender-reveal-card-hq.mp4",
+      "heroVideo": "/portfolio/web/gender-reveal-1080.mp4",
+      "gallery": [
+        "/portfolio/web/gender-reveal-still-1.jpg",
+        "/portfolio/web/gender-reveal-still-2.jpg",
+        "/portfolio/web/gender-reveal-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 140,
+      "placeholder": false
+    },
+    {
+      "id": 24,
+      "aspectRatio": 1.7777777777777777,
+      "title": "История для ребёнка",
+      "slug": "child-story",
+      "subtitle": "Персональный фильм",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Персональный фильм"
+      ],
+      "services": [
+        "Персональный фильм"
+      ],
+      "description": "История для ребёнка — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "История для ребёнка — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "История для ребёнка — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/child-story-poster-hq.jpg",
+      "coverAlt": "История для ребёнка",
+      "coverVideo": "/portfolio/web/child-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/child-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/child-story-still-1.jpg",
+        "/portfolio/web/child-story-still-2.jpg",
+        "/portfolio/web/child-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 150,
+      "placeholder": false
+    },
+    {
+      "id": 25,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Семейная история",
+      "slug": "family-story",
+      "subtitle": "Персональный фильм",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Персональный фильм"
+      ],
+      "services": [
+        "Персональный фильм"
+      ],
+      "description": "Семейная история — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Семейная история — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Семейная история — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/family-story-poster-hq.jpg",
+      "coverAlt": "Семейная история",
+      "coverVideo": "/portfolio/web/family-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/family-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/family-story-still-1.jpg",
+        "/portfolio/web/family-story-still-2.jpg",
+        "/portfolio/web/family-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 160,
+      "placeholder": false
+    },
+    {
+      "id": 26,
+      "aspectRatio": 1.7777777777777777,
+      "title": "История отношений",
+      "slug": "love-story",
+      "subtitle": "Персональный фильм",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Персональный фильм"
+      ],
+      "services": [
+        "Персональный фильм"
+      ],
+      "description": "История отношений — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "История отношений — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "История отношений — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/love-story-poster-hq.jpg",
+      "coverAlt": "История отношений",
+      "coverVideo": "/portfolio/web/love-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/love-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/love-story-still-1.jpg",
+        "/portfolio/web/love-story-still-2.jpg",
+        "/portfolio/web/love-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 170,
+      "placeholder": false
+    },
+    {
+      "id": 27,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Предложение",
+      "slug": "the-proposal",
+      "subtitle": "Персональный фильм",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Персональный фильм"
+      ],
+      "services": [
+        "Персональный фильм"
+      ],
+      "description": "Предложение — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "intro": "Предложение — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "seoDescription": "Предложение — персональный фильм. Персональная визуальная история KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/the-proposal-poster-hq.jpg",
+      "coverAlt": "Предложение",
+      "coverVideo": "/portfolio/web/the-proposal-card-hq.mp4",
+      "heroVideo": "/portfolio/web/the-proposal-1080.mp4",
+      "gallery": [
+        "/portfolio/web/the-proposal-still-1.jpg",
+        "/portfolio/web/the-proposal-still-2.jpg",
+        "/portfolio/web/the-proposal-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 180,
+      "placeholder": false
+    }
+  ],
+  "en": [
+    {
+      "id": 28,
+      "aspectRatio": 1,
+      "title": "NOIR//VOID",
+      "slug": "noir-void",
+      "subtitle": "Nightlife Campaign",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Nightlife Campaign"
+      ],
+      "services": [
+        "Nightlife Campaign"
+      ],
+      "description": "NOIR//VOID — Nightlife Campaign. A commercial film by KREOMORA STUDIO.",
+      "intro": "NOIR//VOID — Nightlife Campaign. A commercial film by KREOMORA STUDIO.",
+      "seoDescription": "NOIR//VOID — Nightlife Campaign. A commercial film by KREOMORA STUDIO.",
+      "cover": "/portfolio/web/noir-void-poster-hq.jpg",
+      "coverAlt": "NOIR//VOID",
+      "coverVideo": "/portfolio/web/noir-void-card-hq.mp4",
+      "heroVideo": "/portfolio/web/noir-void-1080.mp4",
+      "gallery": [
+        "/portfolio/web/noir-void-still-1.jpg",
+        "/portfolio/web/noir-void-still-2.jpg",
+        "/portfolio/web/noir-void-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 10,
+      "placeholder": false
+    },
+    {
+      "id": 11,
+      "aspectRatio": 1,
+      "title": "СМАЧНО!",
+      "slug": "smachno-social",
+      "subtitle": "Social Campaign",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Social Campaign"
+      ],
+      "services": [
+        "Social Campaign"
+      ],
+      "description": "СМАЧНО! — Social Campaign. A commercial film by KREOMORA STUDIO.",
+      "intro": "СМАЧНО! — Social Campaign. A commercial film by KREOMORA STUDIO.",
+      "seoDescription": "СМАЧНО! — Social Campaign. A commercial film by KREOMORA STUDIO.",
+      "cover": "/portfolio/web/smachno-social-poster-hq.jpg",
+      "coverAlt": "СМАЧНО!",
+      "coverVideo": "/portfolio/web/smachno-social-card-hq.mp4",
+      "heroVideo": "/portfolio/web/smachno-social-1080.mp4",
+      "gallery": [
+        "/portfolio/web/smachno-social-still-1.jpg",
+        "/portfolio/web/smachno-social-still-2.jpg",
+        "/portfolio/web/smachno-social-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 20,
+      "placeholder": false
+    },
+    {
+      "id": 12,
+      "aspectRatio": 0.5625,
+      "title": "СМАЧНО!",
+      "slug": "smachno-food",
+      "subtitle": "Food Commercial",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Food Commercial"
+      ],
+      "services": [
+        "Food Commercial"
+      ],
+      "description": "СМАЧНО! — Food Commercial. A commercial film by KREOMORA STUDIO.",
+      "intro": "СМАЧНО! — Food Commercial. A commercial film by KREOMORA STUDIO.",
+      "seoDescription": "СМАЧНО! — Food Commercial. A commercial film by KREOMORA STUDIO.",
+      "cover": "/portfolio/web/smachno-food-poster-hq.jpg",
+      "coverAlt": "СМАЧНО!",
+      "coverVideo": "/portfolio/web/smachno-food-card-hq.mp4",
+      "heroVideo": "/portfolio/web/smachno-food-1080.mp4",
+      "gallery": [
+        "/portfolio/web/smachno-food-still-1.jpg",
+        "/portfolio/web/smachno-food-still-2.jpg",
+        "/portfolio/web/smachno-food-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 30,
+      "placeholder": false
+    },
+    {
+      "id": 13,
+      "aspectRatio": 0.7448275862068966,
+      "title": "СМАЧНО!",
+      "slug": "smachno-delivery",
+      "subtitle": "Delivery Campaign",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Delivery Campaign"
+      ],
+      "services": [
+        "Delivery Campaign"
+      ],
+      "description": "СМАЧНО! — Delivery Campaign. A commercial film by KREOMORA STUDIO.",
+      "intro": "СМАЧНО! — Delivery Campaign. A commercial film by KREOMORA STUDIO.",
+      "seoDescription": "СМАЧНО! — Delivery Campaign. A commercial film by KREOMORA STUDIO.",
+      "cover": "/portfolio/web/smachno-delivery-poster-hq.jpg",
+      "coverAlt": "СМАЧНО!",
+      "coverVideo": "/portfolio/web/smachno-delivery-card-hq.mp4",
+      "heroVideo": "/portfolio/web/smachno-delivery-1080.mp4",
+      "gallery": [
+        "/portfolio/web/smachno-delivery-still-1.jpg",
+        "/portfolio/web/smachno-delivery-still-2.jpg",
+        "/portfolio/web/smachno-delivery-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 40,
+      "placeholder": false
+    },
+    {
+      "id": 14,
+      "aspectRatio": 0.7448275862068966,
+      "title": "STUDIO EXPERIMENT 01",
+      "slug": "studio-experiment-01",
+      "subtitle": "Sports Animation",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Sports Animation"
+      ],
+      "services": [
+        "Sports Animation"
+      ],
+      "description": "STUDIO EXPERIMENT 01 — Sports Animation. A commercial film by KREOMORA STUDIO.",
+      "intro": "STUDIO EXPERIMENT 01 — Sports Animation. A commercial film by KREOMORA STUDIO.",
+      "seoDescription": "STUDIO EXPERIMENT 01 — Sports Animation. A commercial film by KREOMORA STUDIO.",
+      "cover": "/portfolio/web/studio-experiment-01-poster-hq.jpg",
+      "coverAlt": "STUDIO EXPERIMENT 01",
+      "coverVideo": "/portfolio/web/studio-experiment-01-card-hq.mp4",
+      "heroVideo": "/portfolio/web/studio-experiment-01-1080.mp4",
+      "gallery": [
+        "/portfolio/web/studio-experiment-01-still-1.jpg",
+        "/portfolio/web/studio-experiment-01-still-2.jpg",
+        "/portfolio/web/studio-experiment-01-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 50,
+      "placeholder": false
+    },
+    {
+      "id": 15,
+      "aspectRatio": 0.7448275862068966,
+      "title": "STUDIO EXPERIMENT 02",
+      "slug": "studio-experiment-02",
+      "subtitle": "Sports Animation",
+      "section": "studio",
+      "theme": "dark",
+      "year": 2026,
+      "category": [
+        "Sports Animation"
+      ],
+      "services": [
+        "Sports Animation"
+      ],
+      "description": "STUDIO EXPERIMENT 02 — Sports Animation. A commercial film by KREOMORA STUDIO.",
+      "intro": "STUDIO EXPERIMENT 02 — Sports Animation. A commercial film by KREOMORA STUDIO.",
+      "seoDescription": "STUDIO EXPERIMENT 02 — Sports Animation. A commercial film by KREOMORA STUDIO.",
+      "cover": "/portfolio/web/studio-experiment-02-poster-hq.jpg",
+      "coverAlt": "STUDIO EXPERIMENT 02",
+      "coverVideo": "/portfolio/web/studio-experiment-02-card-hq.mp4",
+      "heroVideo": "/portfolio/web/studio-experiment-02-1080.mp4",
+      "gallery": [
+        "/portfolio/web/studio-experiment-02-still-1.jpg",
+        "/portfolio/web/studio-experiment-02-still-2.jpg",
+        "/portfolio/web/studio-experiment-02-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 60,
+      "placeholder": false
+    },
+    {
+      "id": 16,
+      "aspectRatio": 1.7777777777777777,
+      "title": "3D Story",
+      "slug": "3d-story",
+      "subtitle": "3D Animation",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "3D Animation"
+      ],
+      "services": [
+        "3D Animation"
+      ],
+      "description": "3D Story — 3D Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "3D Story — 3D Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "3D Story — 3D Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/3d-story-poster-hq.jpg",
+      "coverAlt": "3D Story",
+      "coverVideo": "/portfolio/web/3d-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/3d-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/3d-story-still-1.jpg",
+        "/portfolio/web/3d-story-still-2.jpg",
+        "/portfolio/web/3d-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 70,
+      "placeholder": false
+    },
+    {
+      "id": 17,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Cinematic Realism",
+      "slug": "cinematic-realism",
+      "subtitle": "Cinematic",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Cinematic"
+      ],
+      "services": [
+        "Cinematic"
+      ],
+      "description": "Cinematic Realism — Cinematic. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Cinematic Realism — Cinematic. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Cinematic Realism — Cinematic. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/cinematic-realism-poster-hq.jpg",
+      "coverAlt": "Cinematic Realism",
+      "coverVideo": "/portfolio/web/cinematic-realism-card-hq.mp4",
+      "heroVideo": "/portfolio/web/cinematic-realism-1080.mp4",
+      "gallery": [
+        "/portfolio/web/cinematic-realism-still-1.jpg",
+        "/portfolio/web/cinematic-realism-still-2.jpg",
+        "/portfolio/web/cinematic-realism-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 80,
+      "placeholder": false
+    },
+    {
+      "id": 18,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Knitted Story",
+      "slug": "knitted-story",
+      "subtitle": "Knitted Animation",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Knitted Animation"
+      ],
+      "services": [
+        "Knitted Animation"
+      ],
+      "description": "Knitted Story — Knitted Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Knitted Story — Knitted Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Knitted Story — Knitted Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/knitted-story-poster-hq.jpg",
+      "coverAlt": "Knitted Story",
+      "coverVideo": "/portfolio/web/knitted-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/knitted-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/knitted-story-still-1.jpg",
+        "/portfolio/web/knitted-story-still-2.jpg",
+        "/portfolio/web/knitted-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 90,
+      "placeholder": false
+    },
+    {
+      "id": 19,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Clay Story",
+      "slug": "clay-story",
+      "subtitle": "Clay Animation",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Clay Animation"
+      ],
+      "services": [
+        "Clay Animation"
+      ],
+      "description": "Clay Story — Clay Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Clay Story — Clay Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Clay Story — Clay Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/clay-story-poster-hq.jpg",
+      "coverAlt": "Clay Story",
+      "coverVideo": "/portfolio/web/clay-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/clay-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/clay-story-still-1.jpg",
+        "/portfolio/web/clay-story-still-2.jpg",
+        "/portfolio/web/clay-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 100,
+      "placeholder": false
+    },
+    {
+      "id": 20,
+      "aspectRatio": 1.7777777777777777,
+      "title": "2D Animation",
+      "slug": "2d-animation",
+      "subtitle": "2D Animation",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "2D Animation"
+      ],
+      "services": [
+        "2D Animation"
+      ],
+      "description": "2D Animation — 2D Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "2D Animation — 2D Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "2D Animation — 2D Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/2d-animation-poster-hq.jpg",
+      "coverAlt": "2D Animation",
+      "coverVideo": "/portfolio/web/2d-animation-card-hq.mp4",
+      "heroVideo": "/portfolio/web/2d-animation-1080.mp4",
+      "gallery": [
+        "/portfolio/web/2d-animation-still-1.jpg",
+        "/portfolio/web/2d-animation-still-2.jpg",
+        "/portfolio/web/2d-animation-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 110,
+      "placeholder": false
+    },
+    {
+      "id": 21,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Anime Story",
+      "slug": "anime-story",
+      "subtitle": "Anime",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Anime"
+      ],
+      "services": [
+        "Anime"
+      ],
+      "description": "Anime Story — Anime. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Anime Story — Anime. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Anime Story — Anime. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/anime-story-poster-hq.jpg",
+      "coverAlt": "Anime Story",
+      "coverVideo": "/portfolio/web/anime-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/anime-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/anime-story-still-1.jpg",
+        "/portfolio/web/anime-story-still-2.jpg",
+        "/portfolio/web/anime-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 120,
+      "placeholder": false
+    },
+    {
+      "id": 22,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Brick World",
+      "slug": "brick-world",
+      "subtitle": "Brick Animation",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Brick Animation"
+      ],
+      "services": [
+        "Brick Animation"
+      ],
+      "description": "Brick World — Brick Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Brick World — Brick Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Brick World — Brick Animation. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/brick-world-poster-hq.jpg",
+      "coverAlt": "Brick World",
+      "coverVideo": "/portfolio/web/brick-world-card-hq.mp4",
+      "heroVideo": "/portfolio/web/brick-world-1080.mp4",
+      "gallery": [
+        "/portfolio/web/brick-world-still-1.jpg",
+        "/portfolio/web/brick-world-still-2.jpg",
+        "/portfolio/web/brick-world-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 130,
+      "placeholder": false
+    },
+    {
+      "id": 23,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Gender Reveal Story",
+      "slug": "gender-reveal",
+      "subtitle": "Personal Film",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Personal Film"
+      ],
+      "services": [
+        "Personal Film"
+      ],
+      "description": "Gender Reveal Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Gender Reveal Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Gender Reveal Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/gender-reveal-poster-hq.jpg",
+      "coverAlt": "Gender Reveal Story",
+      "coverVideo": "/portfolio/web/gender-reveal-card-hq.mp4",
+      "heroVideo": "/portfolio/web/gender-reveal-1080.mp4",
+      "gallery": [
+        "/portfolio/web/gender-reveal-still-1.jpg",
+        "/portfolio/web/gender-reveal-still-2.jpg",
+        "/portfolio/web/gender-reveal-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 140,
+      "placeholder": false
+    },
+    {
+      "id": 24,
+      "aspectRatio": 1.7777777777777777,
+      "title": "A Story for a Child",
+      "slug": "child-story",
+      "subtitle": "Personal Film",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Personal Film"
+      ],
+      "services": [
+        "Personal Film"
+      ],
+      "description": "A Story for a Child — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "A Story for a Child — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "A Story for a Child — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/child-story-poster-hq.jpg",
+      "coverAlt": "A Story for a Child",
+      "coverVideo": "/portfolio/web/child-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/child-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/child-story-still-1.jpg",
+        "/portfolio/web/child-story-still-2.jpg",
+        "/portfolio/web/child-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 150,
+      "placeholder": false
+    },
+    {
+      "id": 25,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Family Story",
+      "slug": "family-story",
+      "subtitle": "Personal Film",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Personal Film"
+      ],
+      "services": [
+        "Personal Film"
+      ],
+      "description": "Family Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Family Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Family Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/family-story-poster-hq.jpg",
+      "coverAlt": "Family Story",
+      "coverVideo": "/portfolio/web/family-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/family-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/family-story-still-1.jpg",
+        "/portfolio/web/family-story-still-2.jpg",
+        "/portfolio/web/family-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 160,
+      "placeholder": false
+    },
+    {
+      "id": 26,
+      "aspectRatio": 1.7777777777777777,
+      "title": "Love Story",
+      "slug": "love-story",
+      "subtitle": "Personal Film",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Personal Film"
+      ],
+      "services": [
+        "Personal Film"
+      ],
+      "description": "Love Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "Love Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "Love Story — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/love-story-poster-hq.jpg",
+      "coverAlt": "Love Story",
+      "coverVideo": "/portfolio/web/love-story-card-hq.mp4",
+      "heroVideo": "/portfolio/web/love-story-1080.mp4",
+      "gallery": [
+        "/portfolio/web/love-story-still-1.jpg",
+        "/portfolio/web/love-story-still-2.jpg",
+        "/portfolio/web/love-story-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": true,
+      "displayOrder": 170,
+      "placeholder": false
+    },
+    {
+      "id": 27,
+      "aspectRatio": 1.7777777777777777,
+      "title": "The Proposal",
+      "slug": "the-proposal",
+      "subtitle": "Personal Film",
+      "section": "multstory",
+      "theme": "warm",
+      "year": 2026,
+      "category": [
+        "Personal Film"
+      ],
+      "services": [
+        "Personal Film"
+      ],
+      "description": "The Proposal — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "intro": "The Proposal — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "seoDescription": "The Proposal — Personal Film. A personal visual story by KREOMORA MULTSTORY.",
+      "cover": "/portfolio/web/the-proposal-poster-hq.jpg",
+      "coverAlt": "The Proposal",
+      "coverVideo": "/portfolio/web/the-proposal-card-hq.mp4",
+      "heroVideo": "/portfolio/web/the-proposal-1080.mp4",
+      "gallery": [
+        "/portfolio/web/the-proposal-still-1.jpg",
+        "/portfolio/web/the-proposal-still-2.jpg",
+        "/portfolio/web/the-proposal-still-3.jpg"
+      ],
+      "additionalVideos": [],
+      "featured": false,
+      "displayOrder": 180,
+      "placeholder": false
+    }
+  ]
+}

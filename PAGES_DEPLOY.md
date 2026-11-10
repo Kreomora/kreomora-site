@@ -5,7 +5,7 @@ URL: https://kreomora.github.io/kreomora-site/
 ## Build and publication
 
 - Existing Next.js 16.4.5 / npm portfolio, same components, styles, text, contact drafts and ordering.
-- `npm run build` remains the local Payload/SQLite server build. Local `npm run dev` still uses `/` on port 3000.
+- `npm run build` is now the standard Netlify-compatible public Next.js build using `data/portfolio.json`, without Payload or a database. Local `npm run dev` still uses `/` on port 3000. The former CMS routes/configuration are archived under `cms/`.
 - `npm run build:pages` generates a disposable `.pages-build` workspace from the current frontend; Next `output: 'export'`, basePath/assetPrefix `/kreomora-site`, trailing slashes, unoptimized images.
 - Static output: `.pages-build/out/`. No API, admin, database, proxy, server actions or runtime CMS in this build.
 - Two statically specialized locale layouts replace request-header locale detection. Every one of the 18 published project slugs is generated for RU and EN. Root and old non-locale deep links redirect to the equivalent static RU path.
@@ -13,7 +13,7 @@ URL: https://kreomora.github.io/kreomora-site/
 
 ## Content snapshot
 
-`data/pages-projects.json` contains only publicly readable published content and media. To refresh after CMS edits: start the local CMS, run `npm run export:pages-content`, review the diff, build/test and commit. Drafts, users, credentials and private uploads are never exported. Local SQLite and CMS remain intact.
+`data/pages-projects.json` contains only publicly readable published content and media. To refresh from a separately restored legacy CMS server, run `npm run export:pages-content`, review the diff, build/test and commit. Drafts, users, credentials and private uploads are never exported. Local SQLite files and archived CMS sources remain intact; the default app no longer exposes an admin server.
 
 ## Videos and size
 
