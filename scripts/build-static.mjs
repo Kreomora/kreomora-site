@@ -18,7 +18,10 @@ await fs.writeFile(path.join(stage,'next.config.mjs'),`export default {output:'e
 const data=JSON.parse(await fs.readFile(dataFile,'utf8'));
 const files=new Set();
 for(const projects of Object.values(data))for(const p of projects){
- for(const key of ['cover','coverVideo','heroVideo'])if(p[key]){files.add(p[key]);p[key]=prefix+p[key];}
+ for(const key of ['cover','coverVideo','heroVideo'])if(p[key]){
+  const asset=!pages&&key!=='cover'?p[key].replace('/portfolio/web/','/portfolio/web/optimized/'):p[key];
+  files.add(asset);p[key]=prefix+asset;
+ }
  p.gallery=p.gallery.map(u=>{files.add(u);return prefix+u;});
  p.additionalVideos=p.additionalVideos.map(v=>{for(const k of ['src','poster'])if(v[k]){files.add(v[k]);v[k]=prefix+v[k];}return v;});
 }
@@ -45,13 +48,15 @@ for(const locale of ['ru','en']){
   if(!entry.isFile()||entry.name!=='page.tsx')continue;
   const source=path.join(entry.parentPath,entry.name),relative=path.relative(frontend,source);
   let code=transform(await fs.readFile(source,'utf8'));
+  if(!pages)code=code.replaceAll('src={hero.heroVideo}', 'src={hero.coverVideo}').replaceAll('src={hero?.heroVideo}', 'src={hero?.coverVideo}').replace('src={projects[0]?.heroVideo}', 'src={projects[0]?.coverVideo}');
   const route='/'+path.dirname(relative).replaceAll('\\','/').replace(/^\.$/,'');
   if(relative.includes('[slug]')){const section=relative.startsWith('studio')?'studio':'multstory';code+=`\nexport function generateStaticParams(){return ${JSON.stringify(data[locale].filter(p=>p.section===section).map(p=>({slug:p.slug})))};}\n`;}
   // Metadata for non-dynamic pages has an explicit static path.
   else code=code.replace('export async function generateMetadata()',`const staticPath=${JSON.stringify(route)};\nexport async function generateMetadata()`).replaceAll('return localizedMetadata(', 'return pageMetadata(').replaceAll('return {...await localizedMetadata(', 'return {...await pageMetadata(')+`\nfunction pageMetadata(title?:string,description?:string){return localizedMetadata(title,description,${JSON.stringify(route)});}\n`;
   const target=path.join(group,locale,relative);await fs.mkdir(path.dirname(target),{recursive:true});await fs.writeFile(target,code);
  }
- const sections=transform(await fs.readFile('components/sections.tsx','utf8'));
+ let sections=transform(await fs.readFile('components/sections.tsx','utf8'));
+ if(!pages)sections=sections.replace('src={p.heroVideo} alt={p.coverAlt}', 'src={p.coverVideo} alt={p.coverAlt}');
  await fs.writeFile(path.join(stage,`components/sections-${locale}.tsx`),sections);
  await fs.writeFile(path.join(stage,`lib/projects-${locale}.ts`),`import data from '@/data/pages-projects.json';import type {Project,Section} from '@/data/projects';const projects=data.${locale} as Project[];export async function getProjects(section?:Section){return section?projects.filter(p=>p.section===section):projects;}export async function getProject(section:Section,slug:string){const list=await getProjects(section),i=list.findIndex(p=>p.slug===slug);return {project:list[i],next:list[(i+1)%list.length]};}`);
  await fs.writeFile(path.join(stage,`lib/i18n-${locale}.ts`),`import type {Metadata} from 'next';import {dictionaries} from '@/data/translations';export async function getLocale():Promise<'ru'|'en'>{return '${locale}';}export async function getDictionary(){return dictionaries.${locale};}export async function localizedMetadata(title?:string,description?:string,path='/'):Promise<Metadata>{const d=dictionaries.${locale},suffix=path==='/'?'':path.replace(/\\/$/,'');return {metadataBase:new URL(${JSON.stringify(siteOrigin)}),title:title||d.seoTitle,description:description||d.seoDescription,alternates:{canonical:'${prefix}/${locale}'+suffix+'/',languages:{ru:'${prefix}/ru'+suffix+'/',en:'${prefix}/en'+suffix+'/'}},openGraph:{title:title||d.seoTitle,description:description||d.seoDescription,images:['${prefix}/brand/mascot/mascot-home-hero.webp']}};}`);
@@ -64,7 +69,7 @@ for(const entry of await fs.readdir(stage,{recursive:true,withFileTypes:true})){
  const file=path.join(entry.parentPath,entry.name);let s=await fs.readFile(file,'utf8');
  s=s.replaceAll('/brand/',prefix+'/brand/').replaceAll('/media/home/',prefix+'/media/home/');
  if(entry.name==='locale.tsx')s=s.replace('href={`/${l}${path}`}','href={`'+prefix+'/${l}${path}`}');
- if(pages && entry.name==='media.tsx')s=s.replace('ref={video} src={src}','ref={video} onTimeUpdate={hover?event=>{if(event.currentTarget.currentTime>=8)event.currentTarget.currentTime=0;}:undefined} src={src}');
+ if(pages && entry.name==='media.tsx')s=s.replace('ref={video} src={priority?src:undefined}','ref={video} onTimeUpdate={hover?event=>{if(event.currentTarget.currentTime>=8)event.currentTarget.currentTime=0;}:undefined} src={priority?src:undefined}');
  await fs.writeFile(file,s);
 }
 await fs.mkdir(path.join(stage,'app/(entry)'),{recursive:true});

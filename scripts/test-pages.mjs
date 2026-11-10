@@ -8,7 +8,13 @@ const data=JSON.parse(await fs.readFile(netlify?'data/portfolio.json':'data/page
 let count=0;const assets=new Set();
 for(const locale of ['ru','en'])for(const route of ['', 'studio','studio/work','multstory','multstory/stories','about','contact',...data[locale].map(p=>`${p.section}/${p.slug}`)]){
  const file=path.join(out,locale,route,'index.html'),html=await fs.readFile(file,'utf8');count++;
- if(netlify)assert(!html.includes('/kreomora-site/')&&!html.includes('kreomora.github.io'),file+' GitHub Pages URL');
+ if(netlify){
+  assert(!html.includes('/kreomora-site/')&&!html.includes('kreomora.github.io'),file+' GitHub Pages URL');
+  for(const match of html.matchAll(/<video\b[^>]*>/g)){
+   const tag=match[0];
+   if(/\ssrc=/.test(tag))assert(tag.includes('/portfolio/web/optimized/')&&tag.includes('-card-hq.mp4'),file+' eager full film');
+  }
+ }
  assert(html.includes(`<html lang="${locale}"`),file+' lang');assert(!html.includes('/api/media/'),file+' runtime media');
  assert(!html.includes('href="#"'));assert(!/<form\b/.test(html));
  const urls=[...html.matchAll(/(?:href|src|poster)="([^"]+)"/g)].map(m=>m[1].replaceAll('&amp;','&'));
@@ -22,7 +28,8 @@ for(const locale of ['ru','en'])for(const route of ['', 'studio','studio/work','
   assets.add(target);
  }
 }
-const videos=[...assets].filter(p=>p.endsWith('.mp4'));
+// Lazy video sources are serialized as props rather than HTML src attributes.
+const videos=[...new Set(data.ru.flatMap(project=>[project.coverVideo,project.heroVideo]))].map(url=>path.join(out,netlify?url.replace('/portfolio/web/','/portfolio/web/optimized/'):url));
 assert.equal(videos.length,netlify?36:18);
 for(const file of videos){const f=await fs.open(file);const buffer=Buffer.alloc(64);await f.read(buffer,0,64,0);await f.close();assert(!buffer.toString().startsWith('version https://git-lfs'));assert(buffer.toString('ascii',4,8)==='ftyp',file+' MP4 header');}
 for(const entry of ['admin','api'])await assert.rejects(fs.access(path.join(out,entry)));

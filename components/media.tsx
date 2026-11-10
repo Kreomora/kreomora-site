@@ -7,17 +7,55 @@ export function PortfolioVideo({src,poster,alt='',autoplay=true,loop=true,muted=
  const {d}=useLocale();
  const container=useRef<HTMLDivElement>(null),video=useRef<HTMLVideoElement>(null);
  useEffect(()=>{
-  const el=video.current,box=container.current;if(!el||!box||!src)return;
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)'),fine=matchMedia('(hover: hover) and (pointer: fine)');
-  let visible=false,hovered=false;
-  const update=()=>{const play=visible&&!document.hidden&&!reduced.matches&&autoplay&&(!hover||(fine.matches&&hovered));if(play){if(!el.getAttribute('src'))el.src=src;void el.play().catch(()=>{});}else if(!controls||!visible||document.hidden)el.pause();};
-  const enter=()=>{hovered=true;update();},leave=()=>{hovered=false;update();};
-  const target=box.closest('a')||box;
-  target.addEventListener('mouseenter',enter);target.addEventListener('mouseleave',leave);target.addEventListener('focus',enter);target.addEventListener('blur',leave);
-  const observer=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;update();},{threshold:.15});observer.observe(box);
-  document.addEventListener('visibilitychange',update);reduced.addEventListener('change',update);
-  return()=>{observer.disconnect();target.removeEventListener('mouseenter',enter);target.removeEventListener('mouseleave',leave);target.removeEventListener('focus',enter);target.removeEventListener('blur',leave);document.removeEventListener('visibilitychange',update);reduced.removeEventListener('change',update);el.pause();};
- },[src,autoplay,hover,controls]);
- return <div ref={container} className="media"><Image src={poster} alt={alt} fill sizes="(max-width: 700px) 100vw, 85vw" priority={priority} style={{objectFit}}/>{src&&<video ref={video} src={src} poster={poster} muted={muted} loop={loop} playsInline={playsInline} controls={controls} preload={priority?'metadata':preload} aria-label={alt||d.film} style={{objectFit}}/>}</div>;
+  const el=video.current,box=container.current;
+  if(!el||!box||!src)return;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const target:HTMLElement=box.closest('a')||box;
+  let visible=false,near=false,pointer=false,focused=target.matches(':focus-visible');
+  const load=()=>{if(!el.getAttribute('src'))el.src=src;};
+  const update=()=>{
+   const intent=pointer||focused;
+   const canAnimate=autoplay&&!reduced.matches&&!document.hidden;
+   if((controls&&near)|| (canAnimate&&(hover?intent:near)))load();
+   if(canAnimate&&visible&&(!hover||intent)){
+    load();
+    void el.play().catch(()=>{});
+   }else if(!controls||!visible||document.hidden)el.pause();
+  };
+  const enter=(event:PointerEvent)=>{pointer=event.pointerType!=='touch';update();};
+  const leave=()=>{pointer=false;update();};
+  const focus=()=>{focused=target.matches(':focus-visible');update();};
+  const blur=()=>{focused=false;update();};
+  const viewport=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;update();},{threshold:.01});
+  const proximity=new IntersectionObserver(([entry])=>{near=entry.isIntersecting;update();},{rootMargin:'400px'});
+  viewport.observe(box);
+  if(!hover&&!priority)proximity.observe(box);
+  if(hover){
+   target.addEventListener('pointerenter',enter);
+   target.addEventListener('pointerleave',leave);
+   target.addEventListener('focus',focus);
+   target.addEventListener('blur',blur);
+  }
+  document.addEventListener('visibilitychange',update);
+  reduced.addEventListener('change',update);
+  return()=>{
+   viewport.disconnect();
+   proximity.disconnect();
+   target.removeEventListener('pointerenter',enter);
+   target.removeEventListener('pointerleave',leave);
+   target.removeEventListener('focus',focus);
+   target.removeEventListener('blur',blur);
+   document.removeEventListener('visibilitychange',update);
+   reduced.removeEventListener('change',update);
+   el.pause();
+   if(!priority){el.removeAttribute('src');el.load();}
+  };
+ },[src,autoplay,hover,controls,priority]);
+ return <div ref={container} className="media">
+  <Image src={poster} alt={alt} fill sizes="(max-width: 700px) 100vw, 85vw" priority={priority} style={{objectFit}}/>
+  {src&&<video ref={video} src={priority?src:undefined} poster={poster} muted={muted} loop={loop}
+   playsInline={playsInline} controls={controls} preload={priority?'metadata':preload}
+   aria-label={alt||d.film} style={{objectFit}}/>}
+ </div>;
 }
 export const MediaVideo=PortfolioVideo;
