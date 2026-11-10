@@ -38,6 +38,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5.0.1
-        with:
-          # Initial sync of the full-quality portfolio can exceed the action default.
-          timeout: 1800000

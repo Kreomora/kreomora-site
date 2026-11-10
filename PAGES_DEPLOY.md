@@ -26,3 +26,11 @@ Actions checkout uses `lfs: true`; the exporter rejects pointer text in place of
 `npm run test:pages` checks all 50 localized pages, internal links, scripts/styles/images, prefixes, prepared contacts and MP4 headers. `node scripts/serve-pages.mjs` serves the export at http://127.0.0.1:4173/kreomora-site/ with byte-range video support. Direct project URLs have index.html files and work after refresh.
 
 This is a static shareable portfolio snapshot. Browser language switching works; server language cookies and editing through /admin belong to the local/server version. Publishing CMS edits requires updating the snapshot and pushing again. GitHub's Pages size/bandwidth limits still apply.
+
+## Publication attempt — 2026-11-10
+
+Local `npm ci`, the original server build, lint, static build and static tests passed. The export is 742,643,711 bytes across 439 files (largest file 55,936,910 bytes). Local HTTP checks passed for 184 pages/assets; localhost and local /admin both returned 200.
+
+GitHub Actions build/test/artifact upload succeeded twice, but Pages publication did not finish. Runs 42806624938 and 42808441109 stayed at `syncing_files` and were canceled at the deployment timeout. `actions/deploy-pages@v5.0.1` clamps its timeout to 600,000 ms; increasing the input does not extend this limit. The ineffective timeout input was removed. The public URL returned 404, so the site is NOT verified as published. GitHub reported no more specific synchronization error; artifact size is not proven to be the cause.
+
+A practical alternative is to serve the 18 unchanged full-quality MP4 files (723,204,675 bytes) from public object storage/CDN with video byte-range support, keeping approximately 19.4 MB of HTML/CSS/JS/images on Pages. No media were deleted, migrated, downscaled or replaced. This alternative is not implemented; it requires an actual storage destination. Another option is a static hosting provider able to deploy the complete 742.6 MB artifact. Local Payload remains available.
