@@ -5,7 +5,7 @@ URL: https://kreomora.github.io/kreomora-site/
 ## Build and publication
 
 - Existing Next.js 16.4.5 / npm portfolio, same components, styles, text, contact drafts and ordering.
-- `npm run build` is now the standard Netlify-compatible public Next.js build using `data/portfolio.json`, without Payload or a database. Local `npm run dev` still uses `/` on port 3000. The former CMS routes/configuration are archived under `cms/`.
+- `npm run build` is now the separate static Netlify export in `.netlify-build/out` using `data/portfolio.json`, without Payload or a database. Local `npm run dev` still uses `/` on port 3000. The former CMS routes/configuration are archived under `cms/`.
 - `npm run build:pages` generates a disposable `.pages-build` workspace from the current frontend; Next `output: 'export'`, basePath/assetPrefix `/kreomora-site`, trailing slashes, unoptimized images.
 - Static output: `.pages-build/out/`. No API, admin, database, proxy, server actions or runtime CMS in this build.
 - Two statically specialized locale layouts replace request-header locale detection. Every one of the 18 published project slugs is generated for RU and EN. Root and old non-locale deep links redirect to the equivalent static RU path.

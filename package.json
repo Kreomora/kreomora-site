@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-netlify.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -23,7 +23,8 @@
     "export:pages-content": "node scripts/export-pages-content.mjs",
     "test:pages": "node scripts/test-pages.mjs",
     "export:portfolio-content": "node scripts/export-portfolio-content.mjs",
-    "test:production": "node scripts/test-production.mjs"
+    "test:production": "node scripts/test-production.mjs",
+    "build:server": "next build"
   },
   "keywords": [],
   "author": "",

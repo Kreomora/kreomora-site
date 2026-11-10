@@ -11,10 +11,10 @@ npm ci
 npm run dev
 # Production / Netlify:
 npm run build
-npm start
+node scripts/serve-pages.mjs --netlify
 ```
 
-Keep the existing Netlify Next.js configuration and `npm run build` command. Output is `.next`; the separate Pages export is not the Netlify build. No CMS secret, database configuration, admin account or CMS API is required. `NEXT_PUBLIC_SITE_URL` is optional metadata configuration for the public domain.
+Netlify runs `npm run build` and publishes `.netlify-build/out` at the domain root. `netlify.toml` sets both values and skips the Next.js runtime plugin. The build retrieves the referenced Git LFS videos on Netlify. No CMS or database is required. Set `NEXT_PUBLIC_SITE_URL` to override the default Netlify domain in page metadata. GitHub Pages keeps its own build and URL prefix.
 
 ## Public content and routes
 
@@ -38,6 +38,8 @@ To export from a separately running legacy CMS, `npm run export:portfolio-conten
 npm run lint
 npm run typecheck
 npm run build
+node scripts/test-pages.mjs --netlify
+npm run build:server
 npm run test:production
 # With npm start running:
 npm run test:i18n

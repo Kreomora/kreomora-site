@@ -1,5 +1,6 @@
 node_modules/
 .pages-build/
+.netlify-build/
 .vercel/
 .next/
 out/

@@ -42,6 +42,7 @@
     "node_modules",
     ".pages-build",
     "cms/archived-app",
-    "tmp"
+    "tmp",
+    ".netlify-build"
   ]
 }
