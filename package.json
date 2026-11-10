@@ -18,7 +18,10 @@
     "cms:migrate": "payload migrate",
     "cms:migrate:create": "payload migrate:create",
     "cms:localize": "node --env-file=.env --import tsx scripts/localize-portfolio.ts",
-    "test:i18n": "node scripts/test-localization.mjs"
+    "test:i18n": "node scripts/test-localization.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "export:pages-content": "node scripts/export-pages-content.mjs",
+    "test:pages": "node scripts/test-pages.mjs"
   },
   "keywords": [],
   "author": "",
