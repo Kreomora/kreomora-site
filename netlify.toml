@@ -4,3 +4,8 @@ publish = ".netlify-build/out"
 
 [build.environment]
 NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[headers]]
+for = "/*"
+  [headers.values]
+  X-Robots-Tag = "noindex"

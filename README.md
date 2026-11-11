@@ -14,15 +14,15 @@ npm run build
 node scripts/serve-pages.mjs --netlify
 ```
 
-Netlify runs `npm run build` and publishes `.netlify-build/out` at the domain root. `netlify.toml` sets both values and skips the Next.js runtime plugin. The build retrieves the referenced Git LFS videos on Netlify. No CMS or database is required. Set `NEXT_PUBLIC_SITE_URL` to override the default Netlify domain in page metadata. GitHub Pages keeps its own build and URL prefix.
+Netlify runs `npm run build` and publishes `.netlify-build/out` at the domain root. `netlify.toml` sets both values and skips the Next.js runtime plugin. The build retrieves the referenced Git LFS videos on Netlify. No CMS or database is required. Canonical metadata targets `https://kreomora.ru`. Netlify sends `X-Robots-Tag: noindex` for the preview. See [Aéza and Nginx deployment](docs/DEPLOY_AEZA_NGINX.md) for static hosting. GitHub Pages keeps its own build and URL prefix.
 
 ## Public content and routes
 
 `data/portfolio.json` contains public published content for all 18 projects in both languages. `lib/projects.ts` reads this file. Ordering, translations, full-quality films, silent high-quality card clips and posters in `public/portfolio/web/` are preserved. No video has been recompressed or removed.
 
-Existing `/ru` and `/en` routes, language cookies and unprefixed redirects are preserved: home, studio, studio/work, studio/[slug], multstory, multstory/stories, multstory/[slug], about and contact. `/admin` and `/api/projects` return 404.
+Existing `/ru` and `/en` routes and redirects from unprefixed URLs are preserved: home, studio, studio/work, studio/[slug], multstory, multstory/stories, multstory/[slug], about and contact. `/admin` and `/api/projects` return 404.
 
-Contacts remain in `data/contact.ts` and `lib/contact.ts`, including Telegram drafts and email subjects/bodies.
+Contacts remain in `data/contact.ts` and `lib/contact.ts`, including Telegram drafts. Email buttons open a copy dialog.
 
 ## Archived CMS
 

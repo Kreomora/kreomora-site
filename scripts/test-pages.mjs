@@ -8,7 +8,12 @@ const data=JSON.parse(await fs.readFile(netlify?'data/portfolio.json':'data/page
 let count=0;const assets=new Set();
 for(const locale of ['ru','en'])for(const route of ['', 'studio','studio/work','multstory','multstory/stories','about','contact',...data[locale].map(p=>`${p.section}/${p.slug}`)]){
  const file=path.join(out,locale,route,'index.html'),html=await fs.readFile(file,'utf8');count++;
+ assert(!html.includes('mailto:'),file+' email must use copy dialog');
+ assert(!/googletagmanager|google-analytics|mc\.yandex|connect\.facebook\.net|PAYLOAD_SECRET|DATABASE_URI/i.test(html),file+' prohibited runtime or tracking');
  if(netlify){
+  const url='https://kreomora.ru/'+locale+'/'+(route?route+'/':'');
+  assert(html.includes(`rel="canonical" href="${url}"`),file+' canonical');
+  assert(html.includes(`property="og:url" content="${url}"`),file+' Open Graph URL');
   assert(!html.includes('/kreomora-site/')&&!html.includes('kreomora.github.io'),file+' GitHub Pages URL');
   for(const match of html.matchAll(/<video\b[^>]*>/g)){
    const tag=match[0];
@@ -20,7 +25,6 @@ for(const locale of ['ru','en'])for(const route of ['', 'studio','studio/work','
  const urls=[...html.matchAll(/(?:href|src|poster)="([^"]+)"/g)].map(m=>m[1].replaceAll('&amp;','&'));
  for(const u of urls){
   if(u.startsWith('https://t.me/'))assert(new URL(u).searchParams.get('text'));
-  if(u.startsWith('mailto:')){assert(new URL(u).searchParams.get('subject'));assert(new URL(u).searchParams.get('body'));}
   if(!u.startsWith('/')||u.startsWith('//'))continue;
   assert(u.startsWith(base+'/'),file+' incorrect base path '+u);
   let target=path.join(out,decodeURIComponent(u.slice(base.length).split(/[?#]/)[0]));
@@ -33,4 +37,10 @@ const videos=[...new Set(data.ru.flatMap(project=>[project.coverVideo,project.he
 assert.equal(videos.length,netlify?36:18);
 for(const file of videos){const f=await fs.open(file);const buffer=Buffer.alloc(64);await f.read(buffer,0,64,0);await f.close();assert(!buffer.toString().startsWith('version https://git-lfs'));assert(buffer.toString('ascii',4,8)==='ftyp',file+' MP4 header');}
 for(const entry of ['admin','api'])await assert.rejects(fs.access(path.join(out,entry)));
+if(netlify){
+ const sitemap=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
+ assert.equal([...sitemap.matchAll(/<loc>https:\/\/kreomora\.ru\//g)].length,count);
+ assert((await fs.readFile(path.join(out,'robots.txt'),'utf8')).includes('Sitemap: https://kreomora.ru/sitemap.xml'));
+ assert((await fs.readFile(path.join(out,'404.html'),'utf8')).includes('Back home'));
+}
 console.log(`PASS: ${count} localized pages; ${assets.size} internal link/asset targets; ${videos.length} real MP4s; contacts, prefix, HTML language, no API/admin/forms.`);

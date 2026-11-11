@@ -9,6 +9,9 @@ export function PortfolioVideo({src,poster,alt='',autoplay=true,loop=true,muted=
  useEffect(()=>{
   const el=video.current,box=container.current;
   if(!el||!box||!src)return;
+  const showFrame=()=>{el.dataset.ready="true";};
+  if(el.readyState>=2)showFrame();
+  el.addEventListener("loadeddata",showFrame);
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const target:HTMLElement=box.closest('a')||box;
   let visible=false,near=false,pointer=false,focused=target.matches(':focus-visible');
@@ -47,6 +50,8 @@ export function PortfolioVideo({src,poster,alt='',autoplay=true,loop=true,muted=
    target.removeEventListener('blur',blur);
    document.removeEventListener('visibilitychange',update);
    reduced.removeEventListener('change',update);
+   el.removeEventListener("loadeddata",showFrame);
+   delete el.dataset.ready;
    el.pause();
    if(!priority){el.removeAttribute('src');el.load();}
   };

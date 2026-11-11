@@ -1,0 +1,46 @@
+export const releaseContent = {
+ ru: {
+  studio: {
+   intro: 'Коммерческое креативное производство для брендов, продуктов и событий. Мы соединяем креативное направление, визуальный сторителлинг, моушн и AI-инструменты.',
+   tasksTitle: 'Какие задачи решаем',
+   tasks: ['Запуск продукта', 'Рекламная кампания', 'Контент для соцсетей', 'Презентация бренда', 'Визуалы для мероприятия и сцены', 'Фирменный персонаж', 'Имиджевый ролик', 'Экспериментальная кампания'],
+   processTitle: 'Как проходит работа',
+   steps: ['Вы рассказываете идею', 'Мы разбираем задачу', 'Предлагаем формат и визуальный подход', 'Согласовываем объём, стоимость и сроки', 'Создаём проект', 'Передаём готовый результат'],
+   ideaTitle: 'Не нашли нужный формат?',
+   idea: 'Предложите свою идею. Расскажите, что хотите создать — мы разберём задачу, подберём возможный подход и честно скажем, сможем ли её реализовать.',
+   note: 'Мы не ограничиваемся форматами из списка.',
+   action: 'Обсудить идею',
+  },
+  multstory: {
+   intro: 'MULTSTORY создаёт персональные фильмы о людях, событиях и воспоминаниях. Для каждой истории мы подбираем свою концепцию и визуальный стиль.',
+   processTitle: 'Как создаётся фильм',
+   steps: ['Вы рассказываете историю', 'Передаёте материалы и пожелания', 'Мы предлагаем концепцию и визуальный стиль', 'Согласовываем объём, стоимость и сроки', 'Создаём фильм', 'Передаём готовую историю'],
+   ideaTitle: 'У вас другая история?',
+   idea: 'Не обязательно выбирать готовый формат. Расскажите свою идею — мы подумаем, каким может быть фильм, и скажем, сможем ли её реализовать.',
+   note: 'История может начинаться не с формата, а с вашей идеи.',
+   action: 'Рассказать идею',
+  },
+ },
+ en: {
+  studio: {
+   intro: 'Commercial creative production for brands, products and events. We bring together creative direction, visual storytelling, motion design and AI production tools.',
+   tasksTitle: 'What we can help with',
+   tasks: ['Product launches', 'Advertising campaigns', 'Social content', 'Brand presentations', 'Event and stage visuals', 'Brand characters', 'Brand films', 'Experimental campaigns'],
+   processTitle: 'How we work',
+   steps: ['Share your idea', 'We review the brief', 'We propose a format and visual approach', 'We agree on scope, cost and timing', 'We produce the work', 'We deliver the finished project'],
+   ideaTitle: 'Have something different in mind?',
+   idea: 'Tell us what you want to create. We’ll explore the task, consider possible production approaches and tell you whether we can make it happen.',
+   note: 'We’re not limited to the formats listed above.',
+   action: 'Discuss your idea',
+  },
+  multstory: {
+   intro: 'MULTSTORY makes personal films about people, events and memories. We develop a concept and visual style around each individual story.',
+   processTitle: 'How we make your film',
+   steps: ['Share your story', 'Send your materials and preferences', 'We propose a concept and visual style', 'We agree on scope, cost and timing', 'We make the film', 'We deliver your finished story'],
+   ideaTitle: 'Have a different story in mind?',
+   idea: 'You don’t have to choose a predefined format. Tell us your idea — we’ll explore what the film could become and whether we can bring it to life.',
+   note: 'Your idea can be the starting point for the story.',
+   action: 'Tell us your idea',
+  },
+ },
+};

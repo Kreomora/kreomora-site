@@ -1,5 +1,5 @@
 import {contact} from './contact';
-export const site = { name: 'KREOMORA', url: process.env.NEXT_PUBLIC_SITE_URL || 'https://kreomora-visual-worlds.quangtienpham008.chatgpt.site', description: 'KREOMORA creates AI-powered commercials, motion campaigns and personal visual stories through KREOMORA STUDIO and MULTSTORY.' };
+export const site = { name: 'KREOMORA', url: process.env.NEXT_PUBLIC_SITE_URL || 'https://kreomora.ru', description: 'KREOMORA creates AI-powered commercials, motion campaigns and personal visual stories through KREOMORA STUDIO and MULTSTORY.' };
 export const navigation = [{label:'STUDIO',href:'/studio'},{label:'MULTSTORY',href:'/multstory'},{label:'ABOUT',href:'/about'},{label:'CONTACT',href:'/contact'}];
 // TODO: Replace with verified brand accounts before enabling social links.
 

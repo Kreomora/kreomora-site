@@ -30,5 +30,3 @@ export function getContactMessage({locale,context='general',projectTitle}:Contac
  return messages[context];
 }
 export function getTelegramUrl(options:ContactOptions){return `${contact.telegram.url}?text=${encodeURIComponent(getContactMessage(options).telegram)}`;}
-export function getEmailUrl(options:ContactOptions){const {subject,body}=getContactMessage(options);return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;}
-export function contactHref(type:ContactType='general',locale:Locale='ru'){return getEmailUrl({context:type,locale});}

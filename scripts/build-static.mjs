@@ -28,6 +28,7 @@ for(const projects of Object.values(data))for(const p of projects){
 await fs.writeFile(path.join(stage,'data/pages-projects.json'),JSON.stringify(data));
 await fs.cp('public/brand',path.join(stage,'public/brand'),{recursive:true});
 await fs.cp('public/media',path.join(stage,'public/media'),{recursive:true});
+await fs.cp('public/fonts',path.join(stage,'public/fonts'),{recursive:true});
 if (!pages && process.env.NETLIFY === 'true') {
  const include=[...files].filter(file=>file.endsWith('.mp4')).map(file=>'public'+file).join(',');
  const fetchMedia=spawnSync('git',['lfs','pull','--include='+include,'--exclude='],{stdio:'inherit'});
@@ -59,9 +60,10 @@ for(const locale of ['ru','en']){
  if(!pages)sections=sections.replace('src={p.heroVideo} alt={p.coverAlt}', 'src={p.coverVideo} alt={p.coverAlt}');
  await fs.writeFile(path.join(stage,`components/sections-${locale}.tsx`),sections);
  await fs.writeFile(path.join(stage,`lib/projects-${locale}.ts`),`import data from '@/data/pages-projects.json';import type {Project,Section} from '@/data/projects';const projects=data.${locale} as Project[];export async function getProjects(section?:Section){return section?projects.filter(p=>p.section===section):projects;}export async function getProject(section:Section,slug:string){const list=await getProjects(section),i=list.findIndex(p=>p.slug===slug);return {project:list[i],next:list[(i+1)%list.length]};}`);
- await fs.writeFile(path.join(stage,`lib/i18n-${locale}.ts`),`import type {Metadata} from 'next';import {dictionaries} from '@/data/translations';export async function getLocale():Promise<'ru'|'en'>{return '${locale}';}export async function getDictionary(){return dictionaries.${locale};}export async function localizedMetadata(title?:string,description?:string,path='/'):Promise<Metadata>{const d=dictionaries.${locale},suffix=path==='/'?'':path.replace(/\\/$/,'');return {metadataBase:new URL(${JSON.stringify(siteOrigin)}),title:title||d.seoTitle,description:description||d.seoDescription,alternates:{canonical:'${prefix}/${locale}'+suffix+'/',languages:{ru:'${prefix}/ru'+suffix+'/',en:'${prefix}/en'+suffix+'/'}},openGraph:{title:title||d.seoTitle,description:description||d.seoDescription,images:['${prefix}/brand/mascot/mascot-home-hero.webp']}};}`);
+ await fs.writeFile(path.join(stage,`lib/i18n-${locale}.ts`),`import type {Metadata} from 'next';import {dictionaries} from '@/data/translations';export async function getLocale():Promise<'ru'|'en'>{return '${locale}';}export async function getDictionary(){return dictionaries.${locale};}export async function localizedMetadata(title?:string,description?:string,path='/'):Promise<Metadata>{const d=dictionaries.${locale},suffix=path==='/'?'':path.replace(/\\/$/,'');return {metadataBase:new URL(${JSON.stringify(siteOrigin)}),title:title||d.seoTitle,description:description||d.seoDescription,alternates:{canonical:'${prefix}/${locale}'+suffix+'/',languages:{ru:'${prefix}/ru'+suffix+'/',en:'${prefix}/en'+suffix+'/'}},openGraph:{type:'website',url:'${prefix}/${locale}'+suffix+'/',locale:${JSON.stringify(locale==='ru'?'ru_RU':'en_US')},title:title||d.seoTitle,description:description||d.seoDescription,images:['${prefix}/brand/mascot/mascot-home-hero.webp']}};}`);
 }
-await fs.copyFile(`${frontend}/globals.css`,path.join(stage,'app/globals.css'));
+const css=await fs.readFile(`${frontend}/globals.css`,'utf8');
+await fs.writeFile(path.join(stage,'app/globals.css'),css.replaceAll('/fonts/',prefix+'/fonts/'));
 // Remove copied server-only source; locale-specialized modules above serve export.
 await fs.rm(path.join(stage,'components/sections.tsx'));
 for(const entry of await fs.readdir(stage,{recursive:true,withFileTypes:true})){
@@ -81,6 +83,26 @@ const out=path.join(stage,'out');await fs.writeFile(path.join(out,'.nojekyll'),'
 // Preserve legacy non-locale links as static redirects, including deep project URLs.
 for(const route of ['studio','studio/work','multstory','multstory/stories','about','contact',...data.ru.map(p=>`${p.section}/${p.slug}`)]){
  const dir=path.join(out,route);await fs.mkdir(dir,{recursive:true});await fs.writeFile(path.join(dir,'index.html'),`<!doctype html><html lang="ru"><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${prefix}/ru/${route}/"><title>KREOMORA</title><a href="${prefix}/ru/${route}/">KREOMORA</a></html>`);
+}
+if(!pages){
+ const routes=['','studio','studio/work','multstory','multstory/stories','about','contact',
+  ...data.ru.map(project=>`${project.section}/${project.slug}`)];
+ const urls=['ru','en'].flatMap(locale=>routes.map(route=>{
+  const suffix=route?'/'+route+'/':'/';
+  return `  <url><loc>${siteOrigin}/${locale}${suffix}</loc></url>`;
+ }));
+ await fs.writeFile(path.join(out,'sitemap.xml'),['<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',...urls,'</urlset>',''].join('\n'));
+ await fs.writeFile(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${siteOrigin}/sitemap.xml\n`);
+ await fs.writeFile(path.join(out,'404.html'),`<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>404 — KREOMORA</title><link rel="icon" href="/brand/kreomora-logo-dark.png">
+<style>
+@font-face{font-family:Manrope;src:url('/fonts/Manrope.ttf') format('truetype');font-display:swap}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#111210;color:#f0eee7;font:1rem Manrope,Arial,sans-serif}
+main{padding:2rem;width:min(80%,42rem)}img{width:110px;height:auto}h1{font-size:clamp(2rem,8vw,5rem);line-height:1}a{color:inherit;text-underline-offset:.4em;display:inline-block;margin:1rem 1rem 0 0}a:focus-visible{outline:2px solid #e4a980;outline-offset:6px}
+</style></head><body><main><img src="/brand/kreomora-logo-light.png" alt="KREOMORA"><h1>Страница не найдена</h1>
+<p lang="en">Page not found</p><a href="/ru/">На главную ↗</a><a href="/en/" lang="en">Back home ↗</a></main></body></html>`);
 }
 let bytes=0;for(const e of await fs.readdir(out,{recursive:true,withFileTypes:true}))if(e.isFile())bytes+=(await fs.stat(path.join(e.parentPath,e.name))).size;
 console.log(`Static export: ${out}; ${bytes} bytes; ${files.size} unique portfolio assets.`);
