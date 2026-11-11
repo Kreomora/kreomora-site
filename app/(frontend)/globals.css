@@ -57,3 +57,18 @@ button.footer-contact-link { text-align: left; padding: 0; }
 @media (hover: hover) { .capability h3 { transition: transform .25s; } .capability:hover h3 { transform: translateX(6px); } }
 
 .media video:not([controls]):not([data-ready]) { opacity: 0; }
+
+@media (max-width: 700px) {
+  .capability { grid-template-columns: minmax(0, 1fr) auto; align-items: start; }
+  .capability > span:empty { display: none; }
+  .capability h3 {
+    grid-area: 1 / 1;
+    min-width: 0;
+    writing-mode: horizontal-tb;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+  .capability p { grid-area: 2 / 1 / 3 / -1; }
+  .capability > span:last-child { grid-area: 1 / 2; }
+}
