@@ -43,6 +43,8 @@ header.menu-open{backdrop-filter:none!important}.mobile-menu{z-index:51}.menu-op
 .email-status:empty { margin: 0; }
 button.footer-contact-link { text-align: left; padding: 0; }
 .contact-stack button.contact-email { text-align: left; }
+.email-dialog .contact-button { width: auto; min-height: 44px; padding: 10px 20px; }
+.email-status[data-copied=true] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .release-section { padding-block: clamp(38px, 7vw, 108px); }
 .release-section + .release-section { border-top: 1px solid var(--line); }
 .release-section h2 { font-size: clamp(28px, 5vw, 76px); margin-bottom: .5em; }

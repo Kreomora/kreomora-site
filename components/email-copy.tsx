@@ -40,7 +40,7 @@ export function EmailCopy({locale, className, children, label}: {
     <button type="button" className="contact-button" autoFocus onClick={copy}>
      {status==='copied'?(ru?'✓ Скопировано':'✓ Copied'):(ru?'Скопировать':'Copy')}
     </button>
-    <p role="status" className="email-status">{status==='manual'?(ru?'Выделите и скопируйте адрес вручную.':'Select the address to copy it manually.'):status==='copied'?(ru?'Адрес скопирован.':'Email address copied.'):''}</p>
+    <p role="status" className="email-status" data-copied={status==='copied'}>{status==='manual'?(ru?'Выделите и скопируйте адрес вручную.':'Select the address to copy it manually.'):status==='copied'?(ru?'Адрес скопирован.':'Email address copied.'):''}</p>
    </div>
   </dialog>
  </>;
