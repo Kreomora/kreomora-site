@@ -1,4 +1,3 @@
-import {ContactLink} from './contact-link';
 import {releaseContent} from '@/data/release-content';
 import type {Locale} from '@/data/translations';
 
@@ -18,6 +17,5 @@ export function CustomIdea({locale, type, embedded = false}: {
     {!embedded && <h2>{copy.ideaTitle}</h2>}
     <p>{copy.idea}</p>
     <p>{copy.note}</p>
-    <ContactLink locale={locale} type={type}>{locale === 'ru' ? 'Обсудить проект' : 'Discuss a project'}</ContactLink>
   </section>;
 }

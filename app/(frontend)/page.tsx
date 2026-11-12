@@ -12,8 +12,8 @@ export default async function Home(){
   const locale = await getLocale(), d = dictionaries[locale], all = await getProjects();
   const ru = locale === 'ru';
   const divisions = [
-    {name: 'STUDIO', path: 'studio', copy: ru ? 'Коммерческие видео и визуалы для брендов и событий.' : 'Commercial films and visuals for brands and events.'},
-    {name: 'MULTSTORY', path: 'multstory', copy: ru ? 'Персональные фильмы о людях, семье, событиях и воспоминаниях.' : 'Personal films about people, family, events and memories.'},
+    {name: 'STUDIO', path: 'studio' as const, copy: ru ? 'Коммерческие видео и визуалы для брендов и событий.' : 'Commercial films and visuals for brands and events.'},
+    {name: 'MULTSTORY', path: 'multstory' as const, copy: ru ? 'Персональные фильмы о людях, семье, событиях и воспоминаниях.' : 'Personal films about people, family, events and memories.'},
   ];
 
   return <>
@@ -36,6 +36,16 @@ export default async function Home(){
       <SectionTitle label={d.twoLabel} title={d.selected} href={`/${locale}/studio/#portfolio`}
         link={ru ? 'Посмотреть работы STUDIO' : 'View STUDIO work'}/>
       <Projects projects={all.filter(p => p.featured)}/>
+    </section>
+    <section className="home-direction-scenes" aria-label={ru ? 'Направления KREOMORA' : 'KREOMORA divisions'}>
+      {divisions.map(({name, path, copy}) => <SiteLink key={path} href={`/${locale}/${path}/`} className="home-direction-scene">
+        <Mascot kind={path} locale={locale}/>
+        <div className="home-direction-scene-copy">
+          <h2>{name}</h2>
+          <p>{copy}</p>
+          <span className="ux-button">{ru ? 'Перейти в' : 'Explore'} {name}</span>
+        </div>
+      </SiteLink>)}
     </section>
     <section className="brand-banner">
       <Mascot kind="home" locale={locale}/>

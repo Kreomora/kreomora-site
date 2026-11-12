@@ -396,3 +396,121 @@ html:has(.project-player[open]) { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .division-accordion-panel, .ux-button, main .text-link { transition: none; }
 }
+
+/* Cinematic imagery follows the portfolio-first structure. */
+.division-cinema {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: end;
+  min-height: clamp(480px, 66svh, 730px);
+  background: #0c1410;
+  color: #f0eee7;
+}
+.division-cinema > .media { z-index: -2; }
+.division-cinema::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, #050a0880, #050a083f 30%, #080e0ce8 94%),
+    linear-gradient(90deg, #070d0bcc, #070d0b10 85%);
+}
+.division-cinema .division-overview {
+  padding-top: clamp(100px, 14svh, 170px);
+  padding-bottom: clamp(30px, 7svh, 86px);
+}
+.division-cinema-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: clamp(18px, 3vw, 32px);
+}
+.division-cinema-actions .ux-button { min-height: 60px; background: #131a16cc; }
+.division-cinema-actions .contact-button { min-height: 60px; }
+.division-scene { position: relative; isolation: isolate; background: var(--bg); }
+.division-scene-art {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 auto;
+  height: min(720px, 70svh);
+  overflow: hidden;
+  pointer-events: none;
+}
+.division-scene-art > img { height: 100%; object-fit: cover; object-position: center 42%; }
+.division-scene-art::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #08120bbb, transparent 25%, var(--bg) 98%),
+    linear-gradient(90deg, #080f0dec, #080f0d80 75%);
+}
+.warm .division-scene-art::after {
+  background: linear-gradient(180deg, #101a15aa, transparent 25%, var(--bg) 98%),
+    linear-gradient(90deg, #101a15ef, #101a1577 75%);
+}
+.division-scene .division-accordion { padding-top: clamp(24px, 5vw, 66px); }
+.division-scene .division-accordion-content {
+  padding: clamp(14px, 3vw, 34px) clamp(8px, 2vw, 24px) clamp(30px, 5vw, 64px);
+  background: linear-gradient(135deg, #0b1914e0, #0b110de0 60%, #111815e0);
+}
+.warm .division-scene .division-accordion-content {
+  background: linear-gradient(135deg, #15241be6, #101a15e0 65%, #20291ce0);
+}
+.division-panel-contact { margin-top: clamp(18px, 3vw, 36px); }
+.home-direction-scenes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(48px, 9vw, 125px);
+}
+.home-direction-scene {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: end;
+  min-height: clamp(310px, 40vw, 620px);
+  padding: clamp(22px, 4vw, 64px);
+  overflow: hidden;
+  background: #0c1511;
+}
+.home-direction-scene img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .55s ease;
+}
+.home-direction-scene::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, transparent 20%, #080d0ab3 57%, #080d0af2);
+}
+.home-direction-scene h2 { font-size: clamp(30px, 5vw, 84px); line-height: 1; }
+.home-direction-scene p { margin-block: 12px 18px; max-width: 42ch; line-height: 1.4; }
+.home-direction-scene:active .ux-button { box-shadow: inset 0 0 0 2px currentColor; }
+.home-direction-scene:focus-visible { outline-offset: -6px; }
+@media (hover: hover) {
+  .division-cinema-actions .ux-button:hover,
+  .home-direction-scene:hover .ux-button { color: #102619; background: #f0eee7; border-color: #f0eee7; }
+  .home-direction-scene:hover img { transform: scale(1.035); }
+}
+@media (max-width: 700px) {
+  .division-cinema { min-height: 54svh; }
+  .division-cinema .division-overview { padding-top: 106px; }
+  .division-cinema-actions .ux-button, .division-cinema-actions .contact-button {
+    width: auto;
+    min-height: 48px;
+    padding: 11px 14px;
+  }
+  .division-cinema-actions .contact-button > span:last-child { min-width: 25px; padding-left: 10px; }
+  .division-scene-art > img { object-position: 53% center; }
+  .home-direction-scenes { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-direction-scene img { transition: none; }
+  .home-direction-scene:hover img { transform: none; }
+}

@@ -2,9 +2,10 @@
 
 import {useEffect, useRef, useState, type ReactNode} from 'react';
 
-export function DivisionAccordion({items, label}: {
+export function DivisionAccordion({items, label, contact}: {
   items: {id: string; title: string; content: ReactNode}[];
   label: string;
+  contact: ReactNode;
 }) {
   const [active, setActive] = useState<string | null>(null);
   const scrollTimer = useRef<number | undefined>(undefined);
@@ -53,7 +54,10 @@ export function DivisionAccordion({items, label}: {
         </h2>
         <div className="division-accordion-panel" id={`${id}-panel`} role="region"
           aria-labelledby={`${id}-toggle`} inert={!expanded} aria-hidden={!expanded}>
-          <div><div className="division-accordion-content">{content}</div></div>
+          <div><div className="division-accordion-content">
+            {content}
+            {id !== 'portfolio' && <div className="division-panel-contact">{contact}</div>}
+          </div></div>
         </div>
       </div>;
     })}
