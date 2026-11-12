@@ -459,6 +459,13 @@ html:has(.project-player[open]) { overflow: hidden; }
   background: linear-gradient(135deg, #15241be6, #101a15e0 65%, #20291ce0);
 }
 .division-panel-contact { margin-top: clamp(18px, 3vw, 36px); }
+@media (max-width: 700px) {
+  /* Keep the final line reachable above the mobile browser and home indicator. */
+  main:has(.division-cinema) + footer {
+    padding-bottom: 24px;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  }
+}
 .home-direction-scenes {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
