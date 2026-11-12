@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import {SiteLink} from '@/components/site-link';
 import {Header,MotionSetup} from '@/components/interactive';
 import {LocaleProvider,LanguageSwitcher} from '@/components/locale';
 import {ContactLink} from '@/components/contact-link';
@@ -11,5 +11,5 @@ export const dynamic='force-dynamic';
 export async function generateMetadata(){return {...await localizedMetadata(),icons:{icon:'/brand/kreomora-logo-dark.png'}};}
 export default async function RootLayout({children}:{children:React.ReactNode}){
  const locale=await getLocale(),d=dictionaries[locale];
- return <html lang={locale} data-scroll-behavior="smooth"><body><LocaleProvider locale={locale}><a className="skip-link" href="#main">{d.skip}</a><Header/><main id="main">{children}</main><footer className="wrap"><div className="footer-top"><Link className="wordmark" href={`/${locale}/`}>KREOMORA</Link><div>{d.nav.slice(0,2).map(n=><Link key={n.path} href={`/${locale}${n.path}`}>{n.label}</Link>)}</div><div><LanguageSwitcher/><ContactLink locale={locale} className="footer-contact-link">Telegram</ContactLink><ContactLink locale={locale} channel="vk" className="footer-contact-link">VK</ContactLink><ContactLink locale={locale} channel="email" className="footer-contact-link">{CONTACT_EMAIL}</ContactLink></div></div><div className="footer-bottom"><span>© 2026 KREOMORA</span><span>STUDIO / MULTSTORY</span></div></footer><MotionSetup/></LocaleProvider></body></html>;
+ return <html lang={locale} data-scroll-behavior="smooth"><body><LocaleProvider locale={locale}><a className="skip-link" href="#main">{d.skip}</a><Header/><main id="main">{children}</main><footer className="wrap"><div className="footer-top"><SiteLink className="wordmark" href={`/${locale}/`}>KREOMORA</SiteLink><div>{d.nav.slice(0,2).map(n=><SiteLink key={n.path} href={`/${locale}${n.path}`}>{n.label}</SiteLink>)}</div><div><LanguageSwitcher/><ContactLink locale={locale} className="footer-contact-link">Telegram</ContactLink><ContactLink locale={locale} channel="vk" className="footer-contact-link">VK</ContactLink><ContactLink locale={locale} channel="email" className="footer-contact-link">{CONTACT_EMAIL}</ContactLink></div></div><div className="footer-bottom"><span>© 2026 KREOMORA</span><span>STUDIO / MULTSTORY</span></div></footer><MotionSetup/></LocaleProvider></body></html>;
 }

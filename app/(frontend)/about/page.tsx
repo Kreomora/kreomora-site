@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import {SiteLink} from '@/components/site-link';
 import {ContactLink} from '@/components/contact-link';
 import {Mascot} from '@/components/mascot';
 import {getLocale, localizedMetadata} from '@/lib/i18n';
@@ -72,24 +72,24 @@ export default async function About() {
    <h2 id="about-directions" className="eyebrow">{d.directions}</h2>
    <div className="about-editorial-split">
     <article>
-     <Link className="about-editorial-world" href={`/${locale}/studio/`}>
+     <SiteLink className="about-editorial-world" href={`/${locale}/studio/`}>
       <Mascot kind="studio" locale={locale}/>
       <div className="about-editorial-world-copy">
        <h3>KREOMORA <strong>STUDIO</strong></h3>
        <p>{d.studio}</p>
        <span className="text-link">{d.enterStudio} <span aria-hidden="true">↗</span></span>
       </div>
-     </Link>
+     </SiteLink>
     </article>
     <article>
-     <Link className="about-editorial-world about-editorial-warm" href={`/${locale}/multstory/`}>
+     <SiteLink className="about-editorial-world about-editorial-warm" href={`/${locale}/multstory/`}>
       <Mascot kind="multstory" locale={locale}/>
       <div className="about-editorial-world-copy">
        <h3>KREOMORA <strong>MULTSTORY</strong></h3>
        <p>{d.multstory}</p>
        <span className="text-link">{d.enterMultstory} <span aria-hidden="true">↗</span></span>
       </div>
-     </Link>
+     </SiteLink>
     </article>
    </div>
   </section>

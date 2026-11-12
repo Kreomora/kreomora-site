@@ -17,7 +17,8 @@ for(const locale of ['ru','en'])for(const route of ['', 'studio','studio/work','
   assert(!html.includes('/kreomora-site/')&&!html.includes('kreomora.github.io'),file+' GitHub Pages URL');
   for(const match of html.matchAll(/<video\b[^>]*>/g)){
    const tag=match[0];
-   if(/\ssrc=/.test(tag))assert(tag.includes('/portfolio/web/optimized/')&&tag.includes('-card-hq.mp4'),file+' eager full film');
+   const homeLoop = !route && tag.includes('src="/media/home/family-story-hero.mp4"');
+   if(/\ssrc=/.test(tag))assert(homeLoop || (tag.includes('/portfolio/web/optimized/') && tag.includes('-card-hq.mp4')),file+' eager full film');
   }
  }
  assert(html.includes(`<html lang="${locale}"`),file+' lang');assert(!html.includes('/api/media/'),file+' runtime media');

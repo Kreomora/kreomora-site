@@ -77,7 +77,7 @@ for(const entry of await fs.readdir(stage,{recursive:true,withFileTypes:true})){
 await fs.mkdir(path.join(stage,'app/(entry)'),{recursive:true});
 await fs.writeFile(path.join(stage,'app/(entry)/layout.tsx'),`export default function Layout({children}:{children:React.ReactNode}){return <html lang="ru"><body>{children}</body></html>}`);
 await fs.writeFile(path.join(stage,'app/(entry)/page.tsx'),`export default function Page(){return <><meta httpEquiv="refresh" content="0;url=${prefix}/ru/"/><a href="${prefix}/ru/">KREOMORA</a></>}`);
-const build=spawnSync(process.execPath,[path.join(root,'node_modules/next/dist/bin/next'),'build',stage],{stdio:'inherit',env:{...process.env,NEXT_PUBLIC_SITE_URL:siteUrl}});
+const build=spawnSync(process.execPath,[path.join(root,'node_modules/next/dist/bin/next'),'build',stage],{stdio:'inherit',env:{...process.env,NEXT_PUBLIC_SITE_URL:siteUrl,NEXT_PUBLIC_SITE_BASE_PATH:prefix}});
 if(build.status!==0)process.exit(build.status||1);
 const out=path.join(stage,'out');await fs.writeFile(path.join(out,'.nojekyll'),'');
 // Preserve legacy non-locale links as static redirects, including deep project URLs.
